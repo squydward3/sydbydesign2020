@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Freight Big Book';
+  src: url("/assets/fonts/FreightBigBook.ttf"); }
+@font-face {
+  font-family: 'Freight Big Bold';
+  src: url("/assets/fonts/FreightBigBold.ttf"); }
+@font-face {
+  font-family: 'Neue Hass Grotesk';
+  src: url("/assets/fonts/NeueHaasGrotDisp-55Roman.otf"); }
+p {
+  font-family: 'Freight Big Bold', serif;
+  font-size: 15em; }
+
+a {
+  text-decoration: none; }
+
+button {
+  background: none;
+  border: none; }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
+
+span.hardbreak {
+  display: block; }
+
+@media (min-width: 415px) {
+  .desk-only {
+    visibility: visible; } }
+@media (max-width: 414px) {
+  .desk-only {
+    display: none !important; } }
+
+@media (min-width: 415px) {
+  .mobile-only {
+    display: none !important; } }
+@media (max-width: 414px) {
+  .mobile-only {
+    visibility: visible; } }
+
+/*# sourceMappingURL=style.css.map */

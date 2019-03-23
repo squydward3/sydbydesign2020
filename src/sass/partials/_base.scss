@@ -1,0 +1,51 @@
+// font
+h1, h2, h3, h4, h5, h6 {
+}
+
+
+// small fonts
+p, li, button, a {
+}
+a {
+  text-decoration: none;
+}
+
+
+// button
+button {
+  background: none;
+  border: none;
+}
+
+// lists
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+// hardbreak
+span.hardbreak {display: block;}
+
+
+
+
+
+
+
+
+.desk-only {
+  @media (min-width: $screen-mobileXL + 1) {
+    visibility: visible;
+  }
+  @include break($screen-mobileXL) {
+    display: none !important;
+  };
+}
+.mobile-only {
+  @media (min-width: $screen-mobileXL + 1) {
+    display: none !important;
+  }
+  @include break($screen-mobileXL) {
+    visibility: visible;
+  };
+}

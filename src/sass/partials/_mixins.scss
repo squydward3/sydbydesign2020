@@ -1,0 +1,32 @@
+//media queries
+@mixin break($breakpoints...) {
+
+  @if length($breakpoints)==1 {
+    @media (max-width: nth($breakpoints, 1)) {
+      @content;
+    }
+  }
+
+  @if length($breakpoints)==2 {
+    @media (min-width: nth($breakpoints, 1)) and (max-width: nth($breakpoints, 2)) {
+      @content;
+    }
+  }
+}//close break
+
+//clearfix
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin ab-po($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}

@@ -7,11 +7,18 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pug: {
       compile: {
-        files: {
-            // The key is the directory files will be compiled to.
-            // The value is an array with the directory/directories where the source files are located.
-            'dist/index.html': [ SRC+'templates/pages/index.pug']
-        },
+        // files: {
+        //     // The key is the directory files will be compiled to.
+        //     // The value is an array with the directory/directories where the source files are located.
+        //     'dist/index.html': [ SRC+'templates/index.pug', SRC+'templates/pages/project1.pug' ]
+        // },
+        files: [ {
+                  cwd: "src/templates",
+                  src: "*.pug",
+                  dest: "dist",
+                  expand: true,
+                  ext: ".html"
+        } ],
         options: {
           data: {
             debug: false
@@ -24,15 +31,19 @@ module.exports = function(grunt) {
         src: [
           SRC + 'sass/*.scss'
         ],
-        dest: SRC + 'sass/build.scss'
+        dest: SRC + 'sass/style.scss'
       }
     },
     sass: {
       dist: {
         files: {
-          'dist/css/build.css': SRC + 'sass/build.scss'
+          'dist/css/style.css': SRC + 'sass/style.scss'
         }
       }
+    },
+    watch: {
+      files: ['src/**/*'],
+      tasks: ['build']
     }
   });
 
@@ -40,13 +51,15 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-pug');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Registers the "pug" and "sass" tasks (defined in the initConfig) to the default task.
   // This way, you can simply call `grunt` in your console to make both tasks run.
   // If you wanted a different or more specific task (say, one specifically for sass), you would include a line with the following:
   //  grunt.registerTask('syds-sass-task', ['sass' ]);
   // ...and then run `grunt syds-sass-task` in the console.
-  grunt.registerTask('default', [ 'pug', 'concat:dist', 'sass' ]);
+  grunt.registerTask('build', [ 'pug', 'concat:dist', 'sass' ]);
+  grunt.registerTask('default', [ 'build', 'watch' ]);
 }
 
 // /* jshint indent: 2 */
