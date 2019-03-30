@@ -1,0 +1,48 @@
+#hero {
+  height: 100vh;
+  width: 100%;
+  background: url('/assets/img/syd-by-design.png') no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+// Projects
+.project {
+  margin: 280px 0 0;
+  .info {
+    padding-top: 102px;
+    h1 {padding: 8px 0 48px}
+  }
+  .full img {
+    width: 100%
+  }
+}
+
+// Project Blurbs
+.blurb {
+  padding: 24px 32px;
+  background-color: $black;
+  width: 224px;
+  border-radius: 1px;
+  p { color: $white; }
+  #connected-orgs &{
+    position: absolute;
+    left: 200px;
+    bottom: -56px;
+  }
+  #export-builder &{
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+  }
+  #policy-redesign &{
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+  }
+  #agency &{
+    position: absolute;
+    left: 300px;
+    top: 50%
+  }
+}

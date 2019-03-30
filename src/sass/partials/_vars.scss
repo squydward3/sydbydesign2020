@@ -11,40 +11,15 @@
   font-family: 'Neue Hass Grotesk';
   src: url('/assets/fonts/NeueHaasGrotDisp-55Roman.otf')
 }
-p {
-  font-family: 'Freight Big Bold', serif;
-  font-size: 15em;
+@font-face {
+  font-family: 'Neue Hass Grotesk Bold';
+  src: url('/assets/fonts/NeueHaasGrotDisp-65Medium.otf')
 }
 
-// // font fam
-// $font-gtamericamono: 'GT America Mono Regular', serif;
-// $font-gtamericamono-bold: 'GT America Mono bold', serif;
-// $font-apercu: 'Apercu Pro Light', serif;
-//
-// //H1-size
-// $font-h1-size: 5.063em;
-//
-// //H2-size
-// $font-h2-size: 3.375em;
-//
-// //H3-size
-// $font-h3-size: 2.25em;
-//
-//
-// //P tag
-// $font-p: 'Apercu Pro Light', serif;
-// $font-p-size: 1em;
-//
-// // Nav
-// $font-nav: 'GT America Mono Regular', serif;
-//
-//
-// // colors
-// $dark-gray: #000000;
-// $light-gray: #666;
-// $pink: #E8A8AF;
-// $navy: #5B707C;
-// $yellow: #E8D986;
+
+// colors
+$black: #1A1A1A;
+$white: #fff;
 
 //screen sizes
 $screen-desktop: 1224px;

@@ -1,34 +1,97 @@
 // font
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
+  font-weight: 300;
+  margin: 0
 }
-
+h1 {
+  font-family: 'Freight Big Bold', serif;
+  font-size: 4.5rem;
+}
+h2 {
+  font-family: 'Freight Big Bold', serif;
+}
+h3 {
+  font-family: 'Neue Hass Grotesk Bold', sans-serif;
+  color: $black;
+  font-size: 2rem;
+}
 
 // small fonts
-p, li, button, a {
+h4, p, li, button, a {
+  font-family: 'Neue Hass Grotesk', sans-serif;
+  color: $black;
+  margin: 0;
+  letter-spacing: .05rem;
+  font-size: 1.125rem;
+  line-height: 30px;
+  &.smaller {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+  &.bigger {
+    font-size: 1.5rem;
+    letter-spacing: .06rem;
+    line-height: 36px;
+  }
 }
-a {
-  text-decoration: none;
-}
+a { text-decoration: none;}
 
 
 // button
 button {
   background: none;
-  border: none;
+  border: 1px solid $black;
+  padding: 14px 24px;
+  border-radius: 1px;
+  outline: none;
+  &:hover {
+    background-color: $black;
+    color: $white;
+    cursor: pointer
+  }
 }
 
 // lists
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0
 }
 
 // hardbreak
 span.hardbreak {display: block;}
 
+//flex
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.jc {
+  &_center {justify-content: center;}
+  &_sb {justify-content: space-between;}
+}
 
+// make img stretch
+img.full {
+  width: 100%
+}
 
-
+// bullet-list
+ul.bullet-list {
+  padding-left: 32px;
+  span.count {
+    padding-right: 8px;
+    font-family: "Neue Hass Grotesk Bold"
+  }
+  span.bullet div {
+    width: 10px;
+    height: 10px;
+    background-color: $black;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+}
 
 
 
