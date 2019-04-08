@@ -1,0 +1,44 @@
+html
+  head
+    include components/head.pug
+    title Agency
+  body
+    include components/navbar.pug
+    
+    section#header
+      .container
+        .row.content
+          .col-sm-3
+            h1 Agency Selects.
+            h4 Havas (2017)
+          .col-sm-offset-2.col-sm-6
+            p.bigger My first job right after college was at an ad agency. While at Havas, I worked on code and design projects for <span class="bold">IBM</span> & <span class="bold">TD Ameritrade</span>.
+        img(src="assets/img/agency-hero.png" class="full")
+    
+    section.process
+      .container
+        .row
+          h3.col-sm-3 IBM
+          p.col-sm-6 2 months after graduation, I became part of the core team that developed IBM's <a href="https://www.ibm.com/industries/manufacturing/iot-in-industrial-sector-2017/#snapshot" class="text-link">IoT Whitepaper</a> experience. I assisted lead developers with animating many individual elements that make up this highly interactive experience: sound, load screen, sidebar, buttons, etc... I also took part in design reviews and helped the dev team consult UX/UI designers with designing motions and interactions that best fulfill the experience.
+        div.vid
+          video(loop="" autoplay="")
+            source(src='assets/img/agency-ibm-1.mp4' type="video/mp4")
+            Your browser does not support the video tag.
+        div.vid
+          video(loop="" autoplay="")
+            source(src='assets/img/agency-ibm-2.mp4' type="video/mp4")
+            Your browser does not support the video tag.
+          
+      
+            
+    include components/footer.pug
+    
+    
+          
+
+
+            
+        
+      
+          
+      

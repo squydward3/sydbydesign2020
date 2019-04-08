@@ -1,5 +1,5 @@
 #hero {
-  height: 100vh;
+  height: 91vh;
   width: 100%;
   background: url('/assets/img/syd-by-design.png') no-repeat;
   background-size: contain;
@@ -8,13 +8,18 @@
 
 // Projects
 .project {
-  margin: 280px 0 0;
+  margin: 240px 0 0;
+  @include break($screen-tablet) { margin: 20px 0 0; }
+  &#connected-orgs {
+    margin: 180px 0 0;
+    @include break($screen-tablet) { margin: 40px 0 0; }
+  }
   .info {
     padding-top: 102px;
-    h1 {padding: 8px 0 48px}
-  }
-  .full img {
-    width: 100%
+    h1 {padding: 8px 0 24px}
+    button {
+      @include break($screen-tablet) { margin-bottom: 24px }
+    }
   }
 }
 
@@ -24,25 +29,45 @@
   background-color: $black;
   width: 224px;
   border-radius: 1px;
+  position: absolute;
+  @include break($screen-tablet) {
+    top: 24px
+  }
   p { color: $white; }
   #connected-orgs &{
-    position: absolute;
     left: 200px;
     bottom: -56px;
+    @include break($screen-tablet) {
+      position: relative;
+      left: 0;
+      bottom: 0;
+    }
   }
   #export-builder &{
-    position: absolute;
     right: 0;
     bottom: -100px;
+    @include break($screen-tablet) {
+      position: relative;
+      right: 0;
+      bottom: 0;
+    }
   }
   #policy-redesign &{
-    position: absolute;
     right: 0;
     bottom: -80px;
+    @include break($screen-tablet) {
+      position: relative;
+      right: 0;
+      bottom: 0;
+    }
   }
   #agency &{
-    position: absolute;
     left: 300px;
-    top: 50%
+    top: 50%;
+    @include break($screen-tablet) {
+      position: relative;
+      left: 0;
+      top: 0;
+    }
   }
 }

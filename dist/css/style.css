@@ -24,7 +24,7 @@ h1 {
   font-size: 4.5rem; }
 
 h2 {
-  font-family: 'Freight Big Bold', serif; }
+  font-family: 'Freight Big Bold', sans-serif; }
 
 h3 {
   font-family: 'Neue Hass Grotesk Bold', sans-serif;
@@ -45,9 +45,17 @@ h4, p, li, button, a {
     font-size: 1.5rem;
     letter-spacing: .06rem;
     line-height: 36px; }
+  h4.biggest, p.biggest, li.biggest, button.biggest, a.biggest {
+    font-size: 1.75rem;
+    letter-spacing: .06rem;
+    line-height: 42px; }
 
 a {
   text-decoration: none; }
+  a.text-link {
+    color: #005cef; }
+    a.text-link:hover {
+      font-family: 'Neue Hass Grotesk Bold', sans-serif; }
 
 button {
   background: none;
@@ -60,6 +68,13 @@ button {
     color: #fff;
     cursor: pointer; }
 
+.vid {
+  margin-top: 32px;
+  margin-bottom: 56px; }
+  .vid video {
+    width: 100%;
+    height: auto; }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -67,6 +82,20 @@ ul {
 
 span.hardbreak {
   display: block; }
+
+span.red {
+  color: #ff1f25; }
+
+span.bold {
+  font-family: "Neue Hass Grotesk Bold"; }
+
+.blockquote::before {
+  content: "\201C";
+  position: relative;
+  left: -.8%;
+  margin-left: -1.5%; }
+.blockquote::after {
+  content: "\201D"; }
 
 .flex {
   display: flex;
@@ -78,15 +107,21 @@ span.hardbreak {
 .jc_sb {
   justify-content: space-between; }
 
+.ai_baseline {
+  align-items: baseline; }
+
 img.full {
   width: 100%; }
 
 ul.bullet-list {
-  padding-left: 32px; }
-  ul.bullet-list span.count {
+  padding-left: 32px;
+  margin-bottom: 24px; }
+  ul.bullet-list li:not(:last-child) {
+    margin-bottom: 12px; }
+  ul.bullet-list li span.count {
     padding-right: 8px;
     font-family: "Neue Hass Grotesk Bold"; }
-  ul.bullet-list span.bullet div {
+  ul.bullet-list li span.bullet div {
     width: 10px;
     height: 10px;
     background-color: #1A1A1A;
@@ -845,44 +880,73 @@ nav ul.nav {
       color: #fff; }
 
 #hero {
-  height: 100vh;
+  height: 91vh;
   width: 100%;
   background: url("/assets/img/syd-by-design.png") no-repeat;
   background-size: contain;
   background-position: bottom; }
 
 .project {
-  margin: 280px 0 0; }
+  margin: 240px 0 0; }
+  @media (max-width: 768px) {
+    .project {
+      margin: 20px 0 0; } }
+  .project#connected-orgs {
+    margin: 180px 0 0; }
+    @media (max-width: 768px) {
+      .project#connected-orgs {
+        margin: 40px 0 0; } }
   .project .info {
     padding-top: 102px; }
     .project .info h1 {
-      padding: 8px 0 48px; }
-  .project .full img {
-    width: 100%; }
+      padding: 8px 0 24px; }
+    @media (max-width: 768px) {
+      .project .info button {
+        margin-bottom: 24px; } }
 
 .blurb {
   padding: 24px 32px;
   background-color: #1A1A1A;
   width: 224px;
-  border-radius: 1px; }
+  border-radius: 1px;
+  position: absolute; }
+  @media (max-width: 768px) {
+    .blurb {
+      top: 24px; } }
   .blurb p {
     color: #fff; }
   #connected-orgs .blurb {
-    position: absolute;
     left: 200px;
     bottom: -56px; }
+    @media (max-width: 768px) {
+      #connected-orgs .blurb {
+        position: relative;
+        left: 0;
+        bottom: 0; } }
   #export-builder .blurb {
-    position: absolute;
     right: 0;
     bottom: -100px; }
+    @media (max-width: 768px) {
+      #export-builder .blurb {
+        position: relative;
+        right: 0;
+        bottom: 0; } }
   #policy-redesign .blurb {
-    position: absolute;
     right: 0;
     bottom: -80px; }
+    @media (max-width: 768px) {
+      #policy-redesign .blurb {
+        position: relative;
+        right: 0;
+        bottom: 0; } }
   #agency .blurb {
-    position: absolute;
     left: 300px;
     top: 50%; }
+    @media (max-width: 768px) {
+      #agency .blurb {
+        position: relative;
+        left: 0;
+        top: 0; } }
 
 section#header {
   padding-top: 56px; }
@@ -896,11 +960,22 @@ section.process {
   section.process p {
     margin-bottom: 24px; }
   section.process img {
-    margin: 24px; }
+    margin: 24px 0; }
 
 footer {
-  margin: 300px 0 100px; }
-  footer .flex {
-    flex-wrap: wrap; }
+  margin: 200px 0 100px; }
+  footer .links a {
+    color: #005cef; }
+    footer .links a:not(:last-child) {
+      margin-right: 32px; }
+    @media (max-width: 414px) {
+      footer .links a {
+        margin-right: 0;
+        display: block; } }
+    footer .links a:hover {
+      font-family: "Neue Hass Grotesk Bold", sans-serif; }
+  footer p.copyright {
+    font-size: .875rem;
+    padding-top: 12px; }
 
 /*# sourceMappingURL=style.css.map */

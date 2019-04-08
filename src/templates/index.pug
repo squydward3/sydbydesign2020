@@ -10,12 +10,12 @@ html
     section#hero
     
     //- Projects
-    mixin project(h4, h4, href, filename, p)
+    mixin project(h4, h1, href, filename, p)
       .container
         .row
           .col-md-3.info
             h4(class="smaller")= h4
-            h1= h4
+            h1= h1
             a(href=href)
               button.smaller View Project
           .col-md-8
@@ -27,11 +27,14 @@ html
       +project("Abacus", "Connected Orgs.", "connected-orgs.html", "connected-orgs.png", "To accommodate the startup’s growth,  I helped Abacus redesign its account management workflow.")
               
     section#export-builder.project
-      +project("Abacus", "Export Builder.", "#", "export-builder.png", "A CSV template creator that helps you export the exact data you want in the format you need.")
+      +project("Abacus", "Export Builder.", "export-builder.html", "export-builder.png", "A CSV template creator that helps you export the exact data you want in the format you need.")
     
     section#policy-redesign.project
-      +project("Abacus", "Policy Redesign.", "#", "policy-redesign.png", "I helped Abacus redesign its Expense Policy page and rule creation flow.")
+      +project("Abacus", "Policy Redesign.", "policy-redesign.html", "policy-redesign.png", "I helped Abacus redesign its Expense Policy page and rule creation flow.")
     
           
     section#agency.project
-      +project("Havas", "Agency.", "#", "agency.png", "While at Havas, I worked on code and design projects for IBM & TD Ameritrade.")
+      +project("Havas", "Agency.", "agency.html", "agency.png", "While at Havas, I worked on code and design projects for IBM & TD Ameritrade.")
+    
+    
+    include components/footer.pug

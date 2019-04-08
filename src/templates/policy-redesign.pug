@@ -1,0 +1,141 @@
+html
+  head
+    include components/head.pug
+    title Policy Redesign
+  body
+    include components/navbar.pug
+    
+    section#header
+      .container
+        .row.content
+          .col-sm-3
+            h1 Policy Redesign.
+            h4 Abacus–Product Design
+          .col-sm-offset-2.col-sm-6
+            p.bigger I helped Abacus redesign its Expense Policy page and rule creation flow.
+        img(src="assets/img/policy-page-hero.png" class="full")
+    
+    section.process
+      .container
+        .row
+          h3.col-sm-3 Background
+          .col-sm-6
+            p Abacus is the only real-time expense management software in the market. Everyone else does monthly expense reports. What this means is that we have incredibly timely and granular <span class="red">quality control</span> over every single expense submitted, unlike other expense solutions whose control stops at the report level.
+            p The <span class="bold">Expense Policy</span> page is where companies set up rules to control the quality of the flow of expense submissions. By defining specific requirements for certain types of expense and filtering out policy-violated submissions at an early stage, we make admins’ job easier.
+        img(src="assets/img/policy-page-trad-vs-rt.png" class="full")
+
+      
+      section.process
+        .container
+          .row
+            h3.col-sm-3 Problem
+            .col-sm-6 
+              p When I began working at Abacus, there were already many problems with this supposed-to-be incredibly powerful feature page. They could be grouped under 2 categories:
+              ul.bullet-list
+                li.flex.jc_sb.ai_baseline
+                  span.bullet
+                    div
+                  span Page UX problems: this page wasn’t built to scale. The 2-column layout clearly did not account for large companies with complex rule systems. In addition, lack of scannability, poor categorization, and inconsistent-turns-confusing UI interactions makes this page very hard to use.
+                li.flex.jc_sb.ai_baseline
+                  span.bullet
+                    div
+                  span Rule creation modal problems: Again, poor rule-type categorization hinders admins’ ability to create a rule that serves their need. These steps were designed in mad-lib style…
+
+        
+      section.process
+        .container
+          .row
+            h3.col-sm-3 Goal
+            .col-sm-6
+              ul.bullet-list
+                li.flex.jc_sb.ai_baseline
+                  span.bullet
+                    div
+                  span Create an experience that empowers our admins to translate their companies’ expense policy to actionable rule item on Abacus
+                li.flex.jc_sb.ai_baseline
+                  span.bullet
+                    div
+                  span Revamp the page’s UX & UI to support larger, more complex organizations (with a lot more rules!)
+                li.flex.jc_sb.ai_baseline
+                  span.bullet
+                    div
+                  span Focus on low-hanging fruits. There are certain backend changes that will make this page fantastic, but there are also immediate frontend changes that will undoubtedly make this page 10 times easier to read and use. Focus on the latter first.
+                  
+      section.process
+        .container
+          .row
+            h3.col-sm-3 Redesign the Page
+            .col-sm-6
+              p This was my first time (re)designing an entire web app page jam-packed with functionalities and micro-interactions. In hindsight, I did try to tackle too much in too much detail during the first round. Because there was so much co-relation between how a rule is created and how it manifests itself on a page, I stumbled a bit to find a good starting point. Finally, I settled on redesigning the page itself first.
+          img(src="assets/img/policy-full-page.png").full
+          .row
+            p.col-sm-offset-3.col-sm-6 At a first glance, you will immediately notice that it now has a one-column layout. Rules are now grouped under one sections but are clearly labeled and color-coded to signify their severity degree/type–Block, Warn, Mile(age), and Auto. I also create a “highlighting logic” for each type of rule based on their differentiators to make it easier for one to scan through the page. For example, for requirement rules, we bold the requirement (note, receipt, etc.) and for auto-approval rule, we bold the merchant.
+          .row
+            p.col-sm-offset-3.col-sm-6.bigger.blockquote I also create a “highlighting logic” for each type of rule based on their differentiators.
+          .col-sm-offset-1.col-sm-10
+            img(src="assets/img/policy-page-before-after.png").full
+          
+    section.process
+      .container
+        .row
+          h3.col-sm-3 Redesign the Modal
+          p.col-sm-6 Redesigning the rule-creation modal was the most UX-heavy part of the project. It involves re-architecting the entire rule creation modal wizard, from redefining which criterion we start the user with to regrouping certain rules to create logical rule types. I started tackling this by breaking down our old rule creation modal in this diagram:
+        img(src="assets/img/policy-page-whiteboard.png").full
+        .row
+          .col-sm-offset-3.col-sm-6 
+            p Part of the reason why it was difficult to use the old rule creation was because it was so dense with unstructured content. We decided to separate the rule creation flow into 2 parts:
+            ul.bullet-list
+              li.flex
+                span.count 1.
+                span Select a rule type (requirement, budget, or time limit)
+              li.flex
+                span.count 2.
+                span Construct the rule based on its type
+        img(src="assets/img/policy-page-pick-a-rule-type.png").full
+        img(src="assets/img/policy-page-create-3-rule-types.png").full
+        img(src="assets/img/policy-page-preview-rule.png").full
+        
+    section.process
+      .container
+        .row
+          h3.col-sm-3 Usability Testing
+          p.col-sm-6 I creative some quick InVision prototypes to test out the new rule creation flow. Working with 2 members of the customer success team, we hopped on a couple of calls with our customers and did a cognitive walkthrough with each of them. We also gave them $50 Amazon giftcards!
+        img(src="assets/img/policy-page-testing.png").full
+        .col-sm-offset-3.col-sm-6 
+          p Among what we found:
+          ul.bullet-list
+            li.flex.jc_sb.ai_baseline
+              span.bullet
+                div
+              span Copy is important! We spend the an entire round iteration working on improving copy for the different rule creation modals in order to make these mad-libs read more like real sentences. We also finessed existing tooltip copy and added extra contextual help to guide users through these flows. It is our goal for this page to be self-served instead of relying heavily on implementation specialists as we did before. 
+            li.flex.jc_sb.ai_baseline
+              span.bullet
+                div
+              span Among the extra features we added, the low-hanging fruits such as rule editing and previewing turn out to be the most fruitful. For v1 of this project, we actually scaled back some of the new features but these remain on the roadmap.
+              
+    section.process
+      .container
+        .row
+          h3.col-sm-3 Launch
+          p.col-sm-6 This project is going to be launched by mid-April, 2019. Check back soon!
+
+
+
+            
+                  
+                  
+                  
+                
+                  
+            
+    include components/footer.pug
+    
+    
+          
+
+
+            
+        
+      
+          
+      

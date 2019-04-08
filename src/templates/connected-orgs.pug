@@ -9,7 +9,7 @@ html
       .container
         .row.content
           .col-sm-3
-            h1 Connected Orgs
+            h1 Connected Orgs.
             h4 Abacus–Product Design
           .col-sm-offset-2.col-sm-6
             p.bigger To accommodate the startup’s growth,  I helped Abacus redesign its account management workflow.
@@ -18,8 +18,7 @@ html
     section.process
       .container
         .row
-          .col-sm-3
-            h3 Background
+          h3.col-sm-3 Background
           .col-sm-6
             p During Abacus’s early years, each company could only have one single account. That sufficed for a while since as a young startup, we were primarily working with smaller companies (20-50 employees) with less complicated organizational structure.
             p To create another branch, companies had to use a hack by creating a brand new Abacus account then naming that account differently. For example, MailChimp used to have 2 accounts: MailChimp - SF and MailChimp - NY. This hacky approach soon proved insufficient as we gained larger clients with clearly defined legal entities within.
@@ -27,8 +26,7 @@ html
       section.process
         .container
           .row
-            .col-sm-3
-              h3 Research
+            h3.col-sm-3 Research
             .col-sm-6
               p As highly demanded as the feature was,  we knew that we couldn’t start roadmapping just yet. Other than account management, there were too many undefined moving pieces associated with this project:  corporate cards, receipt management, etc. Building this feature would affect various parts of our data model and in-app workflows.
               p We felt that we needed further research on  our clients’ company structure, admin/employee habits, supportable use cases, etc. in order to build a sustainable feature that would strengthen Abacus’s core. Working with the customer success team, we sent out a survey to 100 clients, hoping that their responses would inform our decisions in scoping in this project.
@@ -37,8 +35,7 @@ html
       section.process
         .container
           .row
-            .col-sm-3
-              h3 Scope
+            h3.col-sm-3 Scope
             .col-sm-6
               p Informed by our survey responses, we finally laid down some ground work for the feature. I worked mainly on the account management part of the feature, which covers 3 main flows:
               ul.bullet-list
@@ -55,43 +52,35 @@ html
       section.process
         .container
           .row
-            .col-sm-3
-              h3 Onboarding
-            .col-sm-6
-              p The onboarding flow is arguably the most disrupted process with Connected Orgs. Existing users will have to briefly be onboarded to their second org. They will also have to go through a “disambiguation” screen to decide which org they’re  logging into.  My first task was to redesign the onboarding flow on web & mobile in a Connected Orgs world. This allowed us to see which parts of our user entry flow would require an extra disambiguation step.
+            h3.col-sm-3 Onboarding
+            p.col-sm-6 The onboarding flow is arguably the most disrupted process with Connected Orgs. Existing users will have to briefly be onboarded to their second org. They will also have to go through a “disambiguation” screen to decide which org they’re  logging into.  My first task was to redesign the onboarding flow on web & mobile in a Connected Orgs world. This allowed us to see <span class="red">which parts</span> of our user entry flow would require an extra disambiguation step.
           img(src="assets/img/abacus_onboarding_desktop_flow.png").full
+          .row
+            p.col-sm-offset-3.col-sm-6.bigger.blockquote My first task was to redesign the onboarding flow on web & mobile in a Connected Orgs world 
           img(src="assets/img/abacus_onboarding_mobile_flow.png").full
           img(src="assets/img/onboarding_task_analysis.png").full
           
     section.process
       .container
         .row
-          .col-sm-3
-            h3 Disambiguation
+          h3.col-sm-3 Disambiguation
           .col-sm-6
             p Org disambiguation is the heart and soul of this project. Users can disambiguate both at login and while in app. Following the onboarding flow rework, my next task was to mock up several states of the disambiguation screen.Disambiguation_accepted.
         img(src="assets/img/Disambiguation_recently_added.png").full
         img(src="assets/img/Disambiguation_accepted.png").full
+        img(src="assets/img/Inapp_org_switch.png").full
+        
+
     
     section.process
       .container
         .row
-          .col-sm-3
-            h3 Takeaways
-          .col-sm-6
-            p Org disambiguation is the heart and soul of this project. Users can disambiguate both at login and while in app. Following the onboarding flow rework, my next task was to mock up several states of the disambiguation screen.Disambiguation_accepted.
+          h3.col-sm-3 Launch
+          p.col-sm-6 After initial whitelisting, the feature was launched on June 26, 2018 as an enterprise feature. Read more about the it on our <a href="https://blog.abacus.com/connected-orgs-multi-subsidiary-expense-management/" class="text-link">blog post</a>!
+            
+    include components/footer.pug
     
-    footer
-      .container
-        .links
-          a(href="") Connected Orgs
-          a(href="") Export Builder
-          a(href="") Policy Redesign
-          a(href="") Agency(Havas)
-          a(href="") Design at Abacus
-          a(href="") HighCUT
-          a(href="") NYU Albert
-        p © 2019 Sydney Mai. All rights reserved.
+    
           
 
 

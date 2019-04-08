@@ -1,6 +1,13 @@
 footer {
-  margin: 300px 0 100px;
-  .flex {
-    flex-wrap: wrap;
+  margin: 200px 0 100px;
+  .links a {
+    &:not(:last-child) {margin-right: 32px}
+    @include break($screen-mobileXL) { margin-right:0; display: block}
+    color: $blue;
+    &:hover {font-family: "Neue Hass Grotesk Bold", sans-serif;}
+  }
+  p.copyright {
+    font-size: .875rem;
+    padding-top: 12px
   }
 }
