@@ -1,0 +1,51 @@
+html
+  head
+    include components/head.pug
+    title Agency
+  body
+    include components/navbar.pug
+    
+    section#header
+      .container
+        .row.content
+          .col-sm-3
+            h1 HighCUT.
+            h4 Student project (2017)
+          .col-sm-offset-2.col-sm-6
+            p.bigger <span class="bold">High CUT</span> began as a college assignment where I was tasked with designing and coding my own e-commerce store
+        img(src="assets/img/highcut-hero.png" class="full")
+          
+    section.process
+      .container
+        .row
+          h3.col-sm-3 Background
+          p.col-sm-6 <span class="bold">High CUT</span> began as a college assignment where I was tasked with designing and coding my own e-commerce store. Since I was in charge of delivering the whole site from start to end, I was able to think about the experience wholistically from both a design and development perspective. While designing this project, I placed a great emphasis on creating a seamless shopping experience with minimum page loads, clear-cut product selections, and especially a chic, minimalist interface.
+        div.vid
+          video(loop="" autoplay="")
+            source(src='assets/img/highcut-homepage.mp4' type="video/mp4")
+            Your browser does not support the video tag.
+        img(src="assets/img/highcut-product-page.png").full
+        img(src="assets/img/highcut-product-detail.png").full
+        
+    section.process
+      .container
+        .row
+          h3.col-sm-3 Mobile friendly
+          .col-sm-3 
+            p Mobile friendly, as always. Featuring a scrollable tab nav.
+            div.vid
+              video(loop="" autoplay="")
+                source(src='assets/img/highcut-swipe.mp4' type="video/mp4")
+                Your browser does not support the video tag.
+                  
+    include components/footer.pug
+    
+    
+          
+
+
+            
+        
+      
+          
+      
