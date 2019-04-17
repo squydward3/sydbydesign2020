@@ -31,24 +31,28 @@ h3 {
   color: #1A1A1A;
   font-size: 2rem; }
 
-h4, p, li, button, a {
+h4, h5, p, li, button, a {
   font-family: 'Neue Hass Grotesk', sans-serif;
   color: #1A1A1A;
   margin: 0;
   letter-spacing: .05rem;
   font-size: 1.125rem;
   line-height: 30px; }
-  h4.smaller, p.smaller, li.smaller, button.smaller, a.smaller {
+  h4.smaller, h5.smaller, p.smaller, li.smaller, button.smaller, a.smaller {
     font-size: 1rem;
     line-height: 24px; }
-  h4.bigger, p.bigger, li.bigger, button.bigger, a.bigger {
+  h4.bigger, h5.bigger, p.bigger, li.bigger, button.bigger, a.bigger {
     font-size: 1.5rem;
     letter-spacing: .06rem;
     line-height: 36px; }
-  h4.biggest, p.biggest, li.biggest, button.biggest, a.biggest {
+  h4.biggest, h5.biggest, p.biggest, li.biggest, button.biggest, a.biggest {
     font-size: 1.75rem;
     letter-spacing: .06rem;
     line-height: 42px; }
+
+h5 {
+  color: #ff1f25;
+  padding-bottom: 12px; }
 
 a {
   text-decoration: none; }
@@ -877,7 +881,26 @@ nav ul.nav {
       border-right: none; }
     nav ul.nav li:hover {
       background-color: #1A1A1A;
-      color: #fff; }
+      color: #fff;
+      cursor: pointer; }
+
+#about {
+  height: 91vh;
+  width: 100%;
+  background: url("/assets/img/about.png") no-repeat;
+  background-size: contain;
+  background-position: bottom; }
+  #about .container {
+    padding-top: 50px; }
+  #about p.middle {
+    padding: 16px 0; }
+
+#cv {
+  margin-top: 140px; }
+  #cv .exp {
+    padding-top: 64px; }
+    #cv .exp .position {
+      margin-bottom: 24px; }
 
 #hero {
   height: 91vh;
@@ -960,7 +983,7 @@ section.process {
   section.process p {
     margin-bottom: 24px; }
   section.process img {
-    margin: 24px 0; }
+    margin: 30px 0; }
 
 footer {
   margin: 200px 0 100px; }

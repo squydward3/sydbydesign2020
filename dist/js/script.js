@@ -1,3 +1,14 @@
-(function (base, undefined) {
+$(document).ready(function() {
 
-}(window.base = window.base || {}));
+  $(".nav-work").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#footer").offset().top
+    }, 700);
+  });
+  $(".nav-work-index").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#connected-orgs").offset().top
+    }, 500);
+  });
+
+})

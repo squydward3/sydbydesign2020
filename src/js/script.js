@@ -1,3 +1,1 @@
-(function (base, undefined) {
-
-}(window.base = window.base || {}));
+console.log("hi")

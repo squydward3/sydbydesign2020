@@ -16,8 +16,9 @@ h3 {
   font-size: 2rem;
 }
 
+
 // small fonts
-h4, p, li, button, a {
+h4, h5, p, li, button, a {
   font-family: 'Neue Hass Grotesk', sans-serif;
   color: $black;
   margin: 0;
@@ -38,6 +39,10 @@ h4, p, li, button, a {
     letter-spacing: .06rem;
     line-height: 42px;
   }
+}
+h5 {
+  color: $red;
+  padding-bottom: 12px
 }
 
 // link

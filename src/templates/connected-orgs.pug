@@ -18,10 +18,10 @@ html
     section.process
       .container
         .row
-          h3.col-sm-3 Background
+          h3.col-sm-3 Problem
           .col-sm-6
-            p During Abacus’s early years, each company could only have one single account. That sufficed for a while since as a young startup, we were primarily working with smaller companies (20-50 employees) with less complicated organizational structure.
-            p To create another branch, companies had to use a hack by creating a brand new Abacus account then naming that account differently. For example, MailChimp used to have 2 accounts: MailChimp - SF and MailChimp - NY. This hacky approach soon proved insufficient as we gained larger clients with clearly defined legal entities within.
+            p During Abacus’s early years, there was <span class="bold">no concept of a subsidiary account</span>. This sufficed for a while since as a young startup, we primarily catered to smaller companies (20–50 employees) with less complicated organizational structure.
+            p To create a subsidiary, companies had to sign up for a entirely new account. There was virtually no in-app connection between these closely related account instances. Users had to log out of their current org in order to log in to another subsidiary. This approach soon became insufficient as we gained bigger clients with clearly defined legal entities within. Their users, especially admins, <span class="bold">need a centralized platform </span> to easily switch among entities.
       
       section.process
         .container
@@ -30,45 +30,56 @@ html
             .col-sm-6
               p As highly demanded as the feature was,  we knew that we couldn’t start roadmapping just yet. Other than account management, there were too many undefined moving pieces associated with this project:  corporate cards, receipt management, etc. Building this feature would affect various parts of our data model and in-app workflows.
               p We felt that we needed further research on  our clients’ company structure, admin/employee habits, supportable use cases, etc. in order to build a sustainable feature that would strengthen Abacus’s core. Working with the customer success team, we sent out a survey to 100 clients, hoping that their responses would inform our decisions in scoping in this project.
-          img(src="assets/img/connected-orgs-survey-questions.png" class="full")
-        
+          .col-sm-offset-1.col-sm-10
+            img(src="assets/img/connected-org-survey-questions.png" class="full")
+            img(src="assets/img/connected-org-survey-results.png" class="full")
+          .col-sm-offset-3.col-sm-6
+            p <span class="bold">Among what we found</span>:
+            ul.bullet-list
+              li.flex.jc-sb
+                span.count 1.
+                span Admins are more likely to switch orgs than employees.
+              li.flex.jc-sb
+                span.count 2.
+                span The top 3 use cases for this feature are blank split, accounting integration split, and data sandboxing.
+                
       section.process
         .container
           .row
             h3.col-sm-3 Scope
             .col-sm-6
-              p Informed by our survey responses, we finally laid down some ground work for the feature. I worked mainly on the account management part of the feature, which covers 3 main flows:
+              p Informed by our survey responses, we finally laid down some ground work for the feature. I worked primarily on the <span class="bold">account management</span> part of the feature, which covers 3 main flows:
               ul.bullet-list
                 li.flex.jc-sb
                   span.count 1.
-                  span Users should be able to select which org to go to both at login and in app, on both web and mobile. We call this process disambiguation.
+                  span Users should be able to select which org to go to both at login and in app, on both web and mobile. We call this process <span class="bold">disambiguation</span>.
                 li.flex.jc-sb
                   span.count 2.
-                  span Admins should be able to create a subsidiary for their organization.
+                  span Admins should be able to <span class="bold">create a subsidiary</span> for their organization.
                 li.flex.jc-sb 
                   span.count 3.
-                  span Admins should be able to invite employees to new subsidiary
+                  span Admins should be able to <span class="bold">invite employees</span> to their new subsidiary
                   
       section.process
         .container
           .row
             h3.col-sm-3 Onboarding
-            p.col-sm-6 The onboarding flow is arguably the most disrupted process with Connected Orgs. Existing users will have to briefly be onboarded to their second org. They will also have to go through a “disambiguation” screen to decide which org they’re  logging into.  My first task was to redesign the onboarding flow on web & mobile in a Connected Orgs world. This allowed us to see <span class="red">which parts</span> of our user entry flow would require an extra disambiguation step.
-          img(src="assets/img/abacus_onboarding_desktop_flow.png").full
-          .row
-            p.col-sm-offset-3.col-sm-6.bigger.blockquote My first task was to redesign the onboarding flow on web & mobile in a Connected Orgs world 
-          img(src="assets/img/abacus_onboarding_mobile_flow.png").full
-          img(src="assets/img/onboarding_task_analysis.png").full
+            p.col-sm-6 The onboarding flow is arguably the most disrupted process with Connected Orgs. Existing users will have to briefly be onboarded to their second org. They will also have to go through a “disambiguation” screen to decide which org they’re  logging into.  My first task was to redesign the onboarding flow on web & mobile in a Connected Orgs world. This allowed us to see <span class="bold">which parts</span> of our user entry flow would <span class="bold">require an extra disambiguation step</span>.
+          .col-sm-offset-1.col-sm-10
+            img(src="assets/img/connected-org-desktop-flow.png").full
+          p.col-sm-offset-3.col-sm-6.bigger.blockquote My first task was to redesign the onboarding flow on web & mobile in a Connected Orgs world
+          .col-sm-offset-1.col-sm-10 
+            img(src="assets/img/connected-org-mobile-flow.png").full
+            img(src="assets/img/onboarding_task_analysis.png").full
           
     section.process
       .container
         .row
-          h3.col-sm-3 Disambiguation
-          .col-sm-6
-            p Org disambiguation is the heart and soul of this project. Users can disambiguate both at login and while in app. Following the onboarding flow rework, my next task was to mock up several states of the disambiguation screen.Disambiguation_accepted.
+          h3.col-sm-3 Disambiguation          
+          p.col-sm-6 Org disambiguation is the heart and soul of this project. Users can disambiguate both at login and while in app. Following the onboarding flow rework, my next task was to mock up <span calss="bold">several states of the disambiguation screen</span>.
         img(src="assets/img/Disambiguation_recently_added.png").full
         img(src="assets/img/Disambiguation_accepted.png").full
-        img(src="assets/img/Inapp_org_switch.png").full
+        img(src="assets/img/connected-org-inapp-switch.png").full
         
 
     

@@ -4,7 +4,16 @@ html
     title Syd by Design
   body
     //- Nav
-    include components/navbar.pug
+    nav.flex.jc_sb
+      a(href="index.html")
+        .logo
+          img(src="assets/img/logo.svg")
+      ul.nav.flex
+        li.nav-work-index Work
+        a(href="about.html") 
+          li.middle About
+        a(href="https://www.dropbox.com/s/6lvri85xajbon05/sydneymai-resume.pdf?dl=0" target="_blank") 
+           li Resume
     
     //- Hero
     section#hero

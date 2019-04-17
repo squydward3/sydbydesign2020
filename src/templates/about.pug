@@ -1,0 +1,39 @@
+html
+  head
+    include components/head.pug
+    title About
+  body
+    include components/navbar.pug
+    
+    section#about
+      .container
+        .col-sm-offset-6.col-sm-5   
+          p.bigger <span class="bold">Hello. Ciao. 안녕.</span>
+          p.middle My name is Sydney and I like interfaces. When I’m not designing, you can find me browsing photos of cats, reading autobiographies of various comedians, or exploring every quirky corner of Brooklyn. Oh, and I loveee live music.
+          a.text-link(href="sydneymai@nyu.edu") sydneymai@nyu.edu
+          
+    section#cv
+      .container
+        .row
+          h3.col-sm-3 Education
+          .col-sm-6
+            p <span class="bold">New York University</span> | Class of 2017
+            p Bachelor of Science in Media and Communications
+            p Minored in Web Development
+        .row.exp
+          h3.col-sm-3 Experience
+          .col-sm-6
+            .position
+              p <span class="bold">Abacus</span> | New York, NY
+              p Product designer, Mar 2018–present
+            .position
+              p <span class="bold">Havas Media Worldwide</span> | New York, NY
+              p Frontend developer, May–Nov 2017
+            .position
+              p <span class="bold">Warner Music Group</span> | New York, NY
+              p Web platform intern, Jan–May 2016
+            
+              
+    
+      
+    include components/footer.pug

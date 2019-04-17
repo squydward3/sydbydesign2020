@@ -1,0 +1,16 @@
+#about {
+  height: 91vh;
+  width: 100%;
+  background: url('/assets/img/about.png') no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  .container {padding-top: 50px}
+  p.middle {padding: 16px 0}
+}
+#cv {
+  margin-top: 140px;
+  .exp {
+    padding-top: 64px;
+    .position {margin-bottom: 24px}
+  }
+}
