@@ -1,0 +1,144 @@
+html
+  head
+    include components/head.pug
+    title Group Collabs
+  body
+    include components/navbar.pug
+    
+    section#header
+      .container
+        .row.content
+          .col-sm-3
+            h1 Group Collabs.
+            h4 SelfMade | Aug 2019
+          .col-sm-offset-2.col-sm-6
+            p.bigger A CSV template creator that helps you export the exact data you want in the format you need.
+        img(src="assets/img/group-collabs.png" class="full")
+    
+    section.process
+      .container
+        .row
+          h3.col-sm-3 Background
+          .col-sm-6
+            p SelfMade launched SelfMade Collabs, a free collaboration platform for e-commerce owners early summer 2019. If you own an online business, you can browse, favorite, and request a “collab” such as an Instagram giveaway with other e-commerce brands.
+            p After 3 months, we reached 2000 profile created. However, active users—those who have taken such actions as favorite another brand or request a collab within the past 30 days only account for roughly ⅓ of total users. Our goal is to bring this number up.
+
+
+      section.process
+        .container
+          .row
+            h3.col-sm-3 Problem & Research
+            .col-sm-6 
+              p For the past few months, we have been conducting weekly user interviews with e-commerce business owners; some were Collab users, some were our managed partners. We also studied event funnels and watched users’ sessions on Collabs using FullStory.
+              p Based on frequent communication with our users, we had a couple of theories on why users didn’t remain active on Collabs:
+              ul.bullet-list
+                li.flex.jc_sb.ai_baseline
+                  span.bullet
+                    div
+                  span Users <span class="bold">did not fully understand</span> the idea of a “collab” and were <span class="bold">nervous about clicking the “Request a Collab” button</span>. Is it going to send the other brand a n invite or message? What does a collab look like? How does this benefit my business? Information about Collabs and how it works was scant since it was a new platform.
+                li.flex.jc_sb.ai_baseline
+                  span.bullet
+                    div
+                  span Users who sent out collab requests were <span class="bold">discouraged by others’ unresponsiveness</span>. Because they could only send out 1on1 requests, they felt as if they were shooting the dark. The 1on1 method, which was supposed to give “shy” users ample room to explore, was starting to be proven inefficient and ineffective.
+                li.flex.jc_sb.ai_baseline
+                  span.bullet
+                    div
+                  span Users find that setting up a collab is a demanding process. They want an easier <span class="bold">entry point</span> which also allows more collaborators to join and broaden the collab’s audience reach.
+                li.flex.jc_sb.ai_baseline
+                  span.bullet
+                    div
+                  span Users wanted <span class="bold">explore other collab options</span> besides Instagram Giveaway, which is a type of collab that we funneled users straight into when they signed up.
+
+  section.process
+    .container
+      .row
+        h3.col-sm-3 Hypothesis
+        .col-sm-6 
+          p By inverting the 1on1 collab experience so that users can browse ongoing collabs in addition to brands, users will be able to <span class="bold">see how a collab works first </span> without having to commit to one. This will <span class="bold">optimize the platform for different user personas</span>, allowing host-type users to take the lead and passive users to explore more content.
+
+                                
+    section.process
+      .container
+        .row
+          h3.col-sm-3 Product Considerations
+          .col-sm-6 
+            p Now that we had a rough idea of what we wanted to build, we needed to think about experience holistically, from possible entry points to user roles:
+          
+            
+    section.process
+      .container
+        .row
+          h3.col-sm-3 Scope
+          .col-sm-6
+            p Keeping in mind the above product considerations, I worked with my PM and the VP of Product to scope out V1 of this feature:
+            p As a <span class="bold">HOST</span>, I should be able to:
+            ul.bullet-list
+                li.flex.ai_baseline
+                    span.bullet
+                        div
+                    span Start a new collab 
+                li.flex.ai_baseline
+                    span.bullet
+                        div
+                    span Post the collab
+                li.flex.ai_baseline
+                    span.bullet
+                        div
+                    span Review joining requests (Approve/Deny)
+                li.flex.ai_baseline
+                    span.bullet
+                        div
+                    span Invite brands to the collab
+            p As a <span class="bold">PARTICIPANT</span>, I should be able to:
+            ul.bullet-list
+                li.flex.ai_baseline
+                    span.bullet
+                        div
+                    span Browse for a collab 
+                li.flex.ai_baseline
+                    span.bullet
+                        div
+                    span See who has joined (been approved), requested to join, and been invited to join
+                li.flex.ai_baseline
+                    span.bullet
+                        div
+                    span Request to join
+                li.flex.ai_baseline
+                    span.bullet
+                        div
+                    span Message host
+            p As a <span class="bold">SelfMade</span>, I should be able to:
+            ul.bullet-list
+                li.flex.ai_baseline
+                    span.bullet
+                        div
+                    span Organize and post weekly themed collabs based on industry and reach 
+                li.flex.ai_baseline
+                    span.bullet
+                        div
+                    span Recommend weekly themed collabs to brands invited to join              
+        
+    section.process
+      .container
+        .row
+          h3.col-sm-3 Design
+          //- wireframes
+          .col-sm-6
+            h5 Userflow  
+            p While scoping out this feature, I mapped out a host and a participant user flow to show the team
+        img(src="assets/img/group-collabs/host-user-flow.png").full
+        img(src="assets/img/group-collabs/participant-user-flow.png").full
+
+        //- UI
+        .col-sm-offset-3.col-sm-6
+          h5 Group Collab Card Design
+          p I went through a few iterations of the Group Collab card design. Starting out, I want the cards to be long with clear “Request to join” CTA so that they could carry plenty of information. I also wanted them to look distinct from the brand cards. However, after studying how our users interact with the current brand cards and going through these designs with the team, we decided that the cards should be more visually interesting than wordy, since most uses will click on them and go to the collab detail page anyways.
+        .col-sm-offset-3.col-sm-6
+            img(src="assets/img/group-collabs/card-design-iterations.jpg" class="full")
+        div.vid.full
+          video(loop="" autoplay="")
+            source(src="assets/img/group-collabs/browse-demo.mp4" type="video/mp4")
+            Your browser does not support the video tag.
+            
+            
+    include components/footer.pug
