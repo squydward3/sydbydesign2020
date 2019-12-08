@@ -11,6 +11,6 @@
 1. Install Sass: `gem install sass`
 1. `npm install`
 
-##Run
+## Run
 1. Run tasks: `grunt`
 2. In a new Terminal, run local host: `node server.js`
