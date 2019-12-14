@@ -126,10 +126,10 @@ ul.bullet-list {
     padding-right: 8px;
     font-family: "Neue Hass Grotesk Bold"; }
   ul.bullet-list li span.bullet div {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     background-color: #1A1A1A;
-    margin-right: 8px;
+    margin-right: 10px;
     border-radius: 50%; }
 
 @media (min-width: 415px) {
@@ -938,6 +938,14 @@ nav ul.nav {
       top: 24px; } }
   .blurb p {
     color: #fff; }
+  #group-collabs .blurb {
+    left: 200px;
+    bottom: -56px; }
+    @media (max-width: 768px) {
+      #group-collabs .blurb {
+        position: relative;
+        left: 0;
+        bottom: 0; } }
   #connected-orgs .blurb {
     left: 200px;
     bottom: -56px; }

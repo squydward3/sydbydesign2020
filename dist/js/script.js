@@ -7,7 +7,7 @@ $(document).ready(function() {
   });
   $(".nav-work-index").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#connected-orgs").offset().top
+        scrollTop: $("#group-collabs").offset().top
     }, 500);
   });
 
