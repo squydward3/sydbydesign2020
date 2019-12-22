@@ -928,16 +928,24 @@ nav ul.nav {
         margin-bottom: 24px; } }
 
 .blurb {
-  padding: 24px 32px;
+  padding: 18px;
   background-color: #1A1A1A;
   width: 224px;
-  border-radius: 1px;
+  border-radius: 2px;
   position: absolute; }
   @media (max-width: 768px) {
     .blurb {
       top: 24px; } }
   .blurb p {
     color: #fff; }
+  #monthly-recap .blurb {
+    left: 200px;
+    bottom: -56px; }
+    @media (max-width: 768px) {
+      #monthly-recap .blurb {
+        position: relative;
+        left: 0;
+        bottom: 0; } }
   #group-collabs .blurb {
     left: 200px;
     bottom: -56px; }

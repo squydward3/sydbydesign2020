@@ -7,7 +7,7 @@ $(document).ready(function() {
   });
   $(".nav-work-index").click(function() {
     $([document.documentElement, document.body]).animate({
-        scrollTop: $("#group-collabs").offset().top
+        scrollTop: $("#monthly-recap").offset().top
     }, 500);
   });
 

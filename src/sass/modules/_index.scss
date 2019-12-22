@@ -25,15 +25,24 @@
 
 // Project Blurbs
 .blurb {
-  padding: 24px 32px;
+  padding: 18px;
   background-color: $black;
   width: 224px;
-  border-radius: 1px;
+  border-radius: 2px;
   position: absolute;
   @include break($screen-tablet) {
     top: 24px
   }
   p { color: $white; }
+  #monthly-recap &{
+    left: 200px;
+    bottom: -56px;
+    @include break($screen-tablet) {
+      position: relative;
+      left: 0;
+      bottom: 0;
+    }
+  }
   #group-collabs &{
     left: 200px;
     bottom: -56px;
