@@ -1,0 +1,52 @@
+html
+  head
+    include components/head.pug
+    title Design at Abacus
+  body
+    include components/navbar.pug
+    
+    section#header
+      .container
+        .row.content
+          .col-sm-3
+            h1 Design at Abacus.
+            h4 Abacus | Mar 2018 - June 2019
+          .col-sm-offset-2.col-sm-6
+            p.bigger I spent over a year as a product designer at Abacus, an expense management software.
+        img(src="assets/img/design-at-abacus/hero.png" class="full")
+    
+    section.process
+      .container
+        .row
+            h3.col-sm-3 Mobile Design
+            p.col-sm-6 Aside from designing Abacus’ web app, I also spent some time working on the mobile app. While the web app is designed primarily for admins to review and approve expenses, the mobile app aims to make it easier for employees to submit expenses for reimbursement.
+        img(src="assets/img/design-at-abacus/mobile-design.png" class="full")
+    
+    section.process
+      .container
+        .row
+            h3.col-sm-3 Travel
+            p.col-sm-6 Abacus acquired a travel-booking product in 2019. One of my favorite projects was designing how to display travel information (receipts, itinerary, etc.) from this standalone product natively on our web app.
+        img(src="assets/img/design-at-abacus/receipts.png" class="full")
+        img(src="assets/img/design-at-abacus/travel-page.png" class="full")
+    
+    section.process
+      .container
+        .row
+            h3.col-sm-3 "Subway Map"
+            p.col-sm-6 The “subway map” shows users an expense’s journey from submission to reimbursement. I had a lot of fun working on this feature. Considering the various different states of an expense, it was both a UX and UI challenge! 
+        img(src="assets/img/design-at-abacus/subwaymap-1.png" class="full")
+        img(src="assets/img/design-at-abacus/subwaymap-2.png" class="full")
+    
+    section.process
+      .container
+        .row
+            h3.col-sm-3 Design System
+            p.col-sm-6 I spent summer 2018 working on the Abacus Design System with a visual designer. I also implemented a big chunk of CSS changes in the code base so that our components were updated with the new system.
+        .col-sm-offset-3.col-sm-6
+            img(src="assets/img/design-at-abacus/ds-1.png" class="full")
+        .col-sm-offset-3.col-sm-6
+            img(src="assets/img/design-at-abacus/ds-2.png" class="full")
+            
+            
+    include components/footer.pug
