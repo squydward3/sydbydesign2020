@@ -79,39 +79,56 @@ html
           //- UI
           .col-sm-6
             h5 UI Experiments  
-            p I worked with a couple of different UI layouts and card designs for this feature and user-tested them with other team members.
+            p I worked with a couple of different UI layouts and card designs for this feature and user-tested them with other team members. In the first iteration of wireframes, I didn’t take into consideration fluctuation tickers, which was a major flaw that was pointed out in our first design reviews. Without tickers, users won't have be able to compare performance results this month with last month's. Thank you, team!
+        .col-sm-offset-1.col-sm-10
+            img(src="assets/img/monthly-recap/wireframes.png").full
+        .col-sm-offset-3.col-sm-6
+          p Before I started working on hi-fi mockups, I pulled all the UI components from our Design System that could be reused for this feature. As a rule of thumb, we try to reuse as many components as we can. For example, the ad creative card and the note banner haave already been built out so we just used those.
+        .col-sm-offset-1.col-sm-10
+          img(src="assets/img/monthly-recap/design-system.png").full
+        .col-sm-offset-3.col-sm-6
+            h5 Strategic Use of Colors
+            p On a UI where you’re displaying stats and fluctuations, colors have to be used strategically. Originally, I want the revenue stat to be green (original, haha), but when you’ve used green as an indicator for "increase", it can get pretty confusing. I also used orange to signify "top performing", but having red, green, and orange produced too much of visual noise, plus there would be a lot of colorful photography on the page from the all the creatives.
         .col-sm-offset-1.col-sm-10
             img(src="assets/img/monthly-recap/ui-experiments.png").full
         .col-sm-offset-1.col-sm-10
             img(src="assets/img/monthly-recap/stat-card-ui.png").full
-        .col-sm-offset-3.col-sm-6
-            h5 Strategic Use of Colors
-            p On a UI where you’re displaying stats and fluctuations, colors have to be used strategically. Originally, I want the revenue stat to be green (original, haha), but when you’ve used green as an indicator for "increase", it can get pretty confusing. I also used orange to signify "top performing", but having red, green, and orange produced too much of visual noise.
 
         //- Final Designs
         .col-sm-offset-3.col-sm-6
           h5 Final Delivery
         .col-sm-offset-1.col-sm-10
-            img(src="assets/img/monthly-recap/full.png").full
-            div.vid.full
-                video(loop="" autoplay="")
-                    source(src="assets/img/monthly-recap/scroll.mp4" type="video/mp4")
-                    Your browser does not support the video tag.
+          img(src="assets/img/monthly-recap/ad.png").full
+          img(src="assets/img/monthly-recap/ig-full.png").full
+          img(src="assets/img/monthly-recap/email-full.png").full
+        .col-sm-offset-3.col-sm-6
+          img(src="assets/img/monthly-recap/email.png").full
+        .col-sm-offset-1.col-sm-10
+          div.vid.full
+              video(loop="" autoplay="")
+                  source(src="assets/img/monthly-recap/scroll.mp4" type="video/mp4")
+                  Your browser does not support the video tag.
         .col-sm-offset-4.col-sm-4
-            div.vid.full
-                video(loop="" autoplay="")
-                    source(src="assets/img/monthly-recap/hover.mp4" type="video/mp4")
-                    Your browser does not support the video tag.
-        .col-sm-offset-2.col-sm-8
-            img(src="assets/img/monthly-recap/email.png").full
+          div.vid.full
+              video(loop="" autoplay="")
+                  source(src="assets/img/monthly-recap/hover.mp4" type="video/mp4")
+                  Your browser does not support the video tag.
+        .col-sm-offset-3.col-sm-6
+            p Although it was not an immediate part of this project, I did design a few integration flows that help partners set up the tools that were necessary for us to do monthly reporting for them (Google Analytics, Facebook Ads Manager, etc.). All of these setups and integrations happen inside the SelfMade web app and provide the backend infrastucture needed for me to design UI above.
+        .col-sm-offset-1.col-sm-10
+          img(src="assets/img/monthly-recap/set-up-email.png").full
+        .col-sm-offset-1.col-sm-10
+          img(src="assets/img/monthly-recap/set-up-ga.png").full
+        .col-sm-offset-3.col-sm-6
+            p Check out this <a href="https://projects.invisionapp.com/share/7JV9M8IVK6D#/screens/397800935_A_1" class="text-link" target="_blank">Invision prototype</a> I made for the feature! 
 
             
-    //- section.process
-    //-   .container
-    //-     .row
-    //-       h3.col-sm-3 Takeaway
-    //-       .col-sm-6 
-    //-       p Group Collabs was the product that made me think holistically about different states of a user flow more than any features I’ve designed. It made me think about things that don’t happen on the immediate product UI such as email notifications and email entry points, things that get triggered by an action such as counters, labels, and their various states. Most importantly, it made me realize the value of workflow gamification in encouraging users to complete tasks.
+    section.process
+      .container
+        .row
+          h3.col-sm-3 Takeaway
+          .col-sm-6 
+            p Product design is adaptive. It is being able to deepdive into fields you have zero expertise in, pick up knowledge on the go, identify and prioritize problems with confidence. All of this wouldn't be possible without a willingness to investigate and learn.
 
             
     include components/footer.pug
