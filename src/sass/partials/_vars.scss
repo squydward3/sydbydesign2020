@@ -15,7 +15,18 @@
   font-family: 'Neue Hass Grotesk Bold';
   src: url('/assets/fonts/NeueHaasGrotDisp-65Medium.otf')
 }
-
+@font-face {
+  font-family: 'Manrope Extrabold';
+  src: url('/assets/fonts/Manrope-ExtraBold.woff2');
+  src: url('/assets/fonts/Manrope-ExtraBold.ttf');
+  src: url('/assets/fonts/Manrope-ExtraBold.otf');
+}
+@font-face {
+  font-family: 'Manrope Regular';
+  src: url('/assets/fonts/Manrope-Regular.woff2');
+  src: url('/assets/fonts/Manrope-Regular.ttf');
+  src: url('/assets/fonts/Manrope-Regular.otf');
+}
 
 // colors
 $black: #1A1A1A;
@@ -23,9 +34,11 @@ $white: #fff;
 $red: #ff1f25;
 $blue: #005cef;
 
+$china-blue: #2150BA;
+
 //screen sizes
-$screen-desktop: 1224px;
-$screen-tablet: 768px;
-$screen-tabletXL: 1024px;
+$screen-desktop-lg: 1200px;//large desktop lg
+$screen-desktop: 992px;//desktop md
+$screen-tablet: 768px;//medium tablet sm
 $screen-mobile: 375px; //iphone6
 $screen-mobileXL: 414px;

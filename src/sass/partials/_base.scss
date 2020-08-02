@@ -4,11 +4,14 @@ h1, h2, h3, h4 {
   margin: 0
 }
 h1 {
-  font-family: 'Freight Big Bold', serif;
+  font-family: 'Manrope Extrabold', Helvetica, sans-serif;
   font-size: 4.5rem;
+  color: $china-blue;
 }
 h2 {
-  font-family: 'Freight Big Bold', sans-serif;
+  font-family: 'Manrope Extrabold', Helvetica, sans-serif;
+  font-size: 4.5rem;
+  color: $china-blue;
 }
 h3 {
   font-family: 'Neue Hass Grotesk Bold', sans-serif;
@@ -69,6 +72,11 @@ button {
   }
 }
 
+//hr
+hr {
+  border-top: 1px solid $china-blue
+}
+
 // video
 .vid {
   margin-top: 32px;
@@ -118,6 +126,7 @@ span.bold {font-family: "Neue Hass Grotesk Bold"}
 }
 .ai {
   &_baseline {align-items: baseline;}
+  &_center {align-items: center;}
 }
 
 // make img stretch
@@ -145,9 +154,6 @@ ul.bullet-list {
   }
 }
 
-
-
-
 .desk-only {
   @media (min-width: $screen-mobileXL + 1) {
     visibility: visible;
@@ -156,6 +162,7 @@ ul.bullet-list {
     display: none !important;
   };
 }
+
 .mobile-only {
   @media (min-width: $screen-mobileXL + 1) {
     display: none !important;

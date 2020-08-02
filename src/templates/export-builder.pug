@@ -5,147 +5,155 @@ html
   body
     include components/navbar.pug
     
-    section#header
-      .container
-        .row.content
-          .col-sm-3
-            h1 Export Builder.
-            h4 Abacus | Jul 2018
-          .col-sm-offset-2.col-sm-6
-            p.bigger A CSV template creator that helps you export the exact data you want in the format you need.
-        img(src="assets/img/export-builder.png" class="full")
+    //- section#header
+    .container-wrapper
+      .container-fluid.project-header.padding-0
+        .col-sm-6.padding-24
+          h1 EXPORT BUILDER
+          p A CSV template creator that helps you export the exact data you want in the format you need.
+        ul.info.col-sm-6.padding-24
+          li.flex.jc_sb
+            p Company
+            p Abacus
+          hr
+          li.flex.jc_sb
+            p Product
+            p Reimbursement software
+          hr
+          li.flex.jc_sb
+            p Year
+            p 2018
+    //-     img(src="assets/img/export-builder.png" class="full")
     
-    section.process
-      .container
-        .row
-          h3.col-sm-3 Background
-          .col-sm-6
-            p Why do we deal with <span class="bold">accounting softwares</span>?
-            p Abacus does more than just reimbursing employees. As a full-fledged expense management solution, we also help companies reconcile their monthly spending into their accounting platforms. From their accounting platform, accountants can handle payroll, reporting, billing, auditing, etc.
-            p There are 4 major accounting softwares: QB, Xero, Intacct, Netsuite. Abacus has direct integration with all 4 of these. However, companies actually use a much wider range of accounting softwares than that depending on the size and type of their business. In our customers’ case, there is <span class="bold">hardly any industry standard</span>. 
+    //- section.process
+    //-   .container
+    //-     .row
+    //-       h3.col-sm-3 Background
+    //-       .col-sm-6
+    //-         p Why do we deal with <span class="bold">accounting softwares</span>?
+    //-         p Abacus does more than just reimbursing employees. As a full-fledged expense management solution, we also help companies reconcile their monthly spending into their accounting platforms. From their accounting platform, accountants can handle payroll, reporting, billing, auditing, etc.
+    //-         p There are 4 major accounting softwares: QB, Xero, Intacct, Netsuite. Abacus has direct integration with all 4 of these. However, companies actually use a much wider range of accounting softwares than that depending on the size and type of their business. In our customers’ case, there is <span class="bold">hardly any industry standard</span>. 
 
+    //- section.process
+    //-   .container
+    //-     .row
+    //-       h3.col-sm-3 Problem
+    //-       .col-sm-6 
+    //-         p For a long time, we instructed our customers to export their expense data as CSV’s and import them to their accounting software. This sounds simple, but in reality it’s not:
+    //-         ul.bullet-list
+    //-           li.flex.jc_sb.ai_baseline
+    //-             span.bullet
+    //-               div
+    //-             span <span class="bold">It takes a ton of formatting</span> to get the exported CSVs in the right shape for an accounting import. Doing this twice a week is a hassle.
+    //-           li.flex.jc_sb.ai_baseline
+    //-             span.bullet
+    //-               div
+    //-             span We only supported all-data export. Even if admin just want to look at 1-2 columns, they <span class="bold">had to export everything</span> out of Abacus, which took a while.
+    //-         p This process has become one of the most time-consuming, manual, and error-prone process our admins have to go through. In addition to accounting import, accountants just love <span class="bold">having full control of their data</span>. They’d also much rather view and manipulate their data in a dedicated software like Excel. The fact that we didn’t support a very advanced export workflow was a huge disadvantage for our product.
 
-      
-      section.process
-        .container
-          .row
-            h3.col-sm-3 Problem
-            .col-sm-6 
-              p For a long time, we instructed our customers to export their expense data as CSV’s and import them to their accounting software. This sounds simple, but in reality it’s not:
-              ul.bullet-list
-                li.flex.jc_sb.ai_baseline
-                  span.bullet
-                    div
-                  span <span class="bold">It takes a ton of formatting</span> to get the exported CSVs in the right shape for an accounting import. Doing this twice a week is a hassle.
-                li.flex.jc_sb.ai_baseline
-                  span.bullet
-                    div
-                  span We only supported all-data export. Even if admin just want to look at 1-2 columns, they <span class="bold">had to export everything</span> out of Abacus, which took a while.
-              p This process has become one of the most time-consuming, manual, and error-prone process our admins have to go through. In addition to accounting import, accountants just love <span class="bold">having full control of their data</span>. They’d also much rather view and manipulate their data in a dedicated software like Excel. The fact that we didn’t support a very advanced export workflow was a huge disadvantage for our product.
-
-  section.process
-    .container
-      .row
-        h3.col-sm-3 Hypothesis
-        .col-sm-6 
-          p By building a custom CSV export workflow that allows admins to select and format exactly what data to export, we will be able to not only support <span class="bold">integration</span> with any accounting softwares but also empower admins to <span class="bold">mobilize their Abacus data</span> for tracking, reporting, and analysis.
+    //- section.process
+    //-   .container
+    //-     .row
+    //-       h3.col-sm-3 Hypothesis
+    //-       .col-sm-6 
+    //-         p By building a custom CSV export workflow that allows admins to select and format exactly what data to export, we will be able to not only support <span class="bold">integration</span> with any accounting softwares but also empower admins to <span class="bold">mobilize their Abacus data</span> for tracking, reporting, and analysis.
 
                                 
-    section.process
-      .container
-        .row
-          h3.col-sm-3 Research solution
-          .col-sm-6 
-            p We have an idea of the general export workflow, but now we’re faced with a more taxing question: <span class="bold">How “custom”</span> is this custom export flow going to be?
-            ul.bullet-list
-              li.flex.jc_sb.ai_baseline
-                span.bullet
-                  div
-                span We want admins to be able to export relatively clean, ready-to-import data, but we also don’t want to turn Abacus into Excel. We definitely don’t want this feature to carry the complexity of our customers’ accounting softwares. After all, we’re still an expense management platform.
-              li.flex.jc_sb.ai_baseline
-                span.bullet
-                  div
-                span We made an educated guess that most admins would be willing to do some amount of extra formatting on their own, provided that we allow them to A.Select exactly what they want B.Do basic formatting such as rename column names, concatenate, etc… But these are just assumptions.
-              li.flex.jc_sb.ai_baseline
-                span.bullet
-                  div
-                span On top of this, we have yet to understand our customer’s export habit: how often they are exporting expenses? Would an export history be useful to them?
-            p To answer existing questions and validate some assumptions we made, we sent out a survey to our admins.
-        img(src="assets/img/export-builder-survey.png").full
-        .col-sm-offset-3.col-sm-6
-          p What we found:
-          ul.bullet-list
-            li.flex.jc_sb.ai_baseline
-              span.bullet
-                div
-              span Sage, Oracle, and Dynamics are our top 3 platforms. However, even within these platforms, there’s a lot of variation. Nothing totally "off the shelf" is likely to work.
-            li.flex.jc_sb.ai_baseline
-              span.bullet
-                div
-              span The ability to <span class="bold">rename</span> column headers and <span class="bold">reformat</span> column values is important. Simply turning on and off columns is insufficient.
-            li.flex.jc_sb.ai_baseline
-              span.bullet
-                div
-              span Considering admins' exporting frequency (once/twice a week), the ability to <span class="bold">auto-schedule exports</span> is something worth considering.
+    //- section.process
+    //-   .container
+    //-     .row
+    //-       h3.col-sm-3 Research solution
+    //-       .col-sm-6 
+    //-         p We have an idea of the general export workflow, but now we’re faced with a more taxing question: <span class="bold">How “custom”</span> is this custom export flow going to be?
+    //-         ul.bullet-list
+    //-           li.flex.jc_sb.ai_baseline
+    //-             span.bullet
+    //-               div
+    //-             span We want admins to be able to export relatively clean, ready-to-import data, but we also don’t want to turn Abacus into Excel. We definitely don’t want this feature to carry the complexity of our customers’ accounting softwares. After all, we’re still an expense management platform.
+    //-           li.flex.jc_sb.ai_baseline
+    //-             span.bullet
+    //-               div
+    //-             span We made an educated guess that most admins would be willing to do some amount of extra formatting on their own, provided that we allow them to A.Select exactly what they want B.Do basic formatting such as rename column names, concatenate, etc… But these are just assumptions.
+    //-           li.flex.jc_sb.ai_baseline
+    //-             span.bullet
+    //-               div
+    //-             span On top of this, we have yet to understand our customer’s export habit: how often they are exporting expenses? Would an export history be useful to them?
+    //-         p To answer existing questions and validate some assumptions we made, we sent out a survey to our admins.
+    //-     img(src="assets/img/export-builder-survey.png").full
+    //-     .col-sm-offset-3.col-sm-6
+    //-       p What we found:
+    //-       ul.bullet-list
+    //-         li.flex.jc_sb.ai_baseline
+    //-           span.bullet
+    //-             div
+    //-           span Sage, Oracle, and Dynamics are our top 3 platforms. However, even within these platforms, there’s a lot of variation. Nothing totally "off the shelf" is likely to work.
+    //-         li.flex.jc_sb.ai_baseline
+    //-           span.bullet
+    //-             div
+    //-           span The ability to <span class="bold">rename</span> column headers and <span class="bold">reformat</span> column values is important. Simply turning on and off columns is insufficient.
+    //-         li.flex.jc_sb.ai_baseline
+    //-           span.bullet
+    //-             div
+    //-           span Considering admins' exporting frequency (once/twice a week), the ability to <span class="bold">auto-schedule exports</span> is something worth considering.
           
             
-    section.process
-      .container
-        .row
-          h3.col-sm-3 Feature Scope
-          .col-sm-6
-            p After we have a substantial understanding of admins' needs through the survey, we started scope out the functionality requirements of this feature. <span class="bold">As an admin, one should be able to</span>:
-            ul.bullet-list
-              li.flex.ai_baseline
-                span.bullet
-                  div
-                span Create, edit and delete export templates 
-              li.flex.ai_baseline
-                span.bullet
-                  div
-                span Within the template, add, rename, reorder, format, and concatenate columns 
-              li.flex.ai_baseline
-                span.bullet
-                  div
-                span Pick a template and export CSVs with correct data and format
+    //- section.process
+    //-   .container
+    //-     .row
+    //-       h3.col-sm-3 Feature Scope
+    //-       .col-sm-6
+    //-         p After we have a substantial understanding of admins' needs through the survey, we started scope out the functionality requirements of this feature. <span class="bold">As an admin, one should be able to</span>:
+    //-         ul.bullet-list
+    //-           li.flex.ai_baseline
+    //-             span.bullet
+    //-               div
+    //-             span Create, edit and delete export templates 
+    //-           li.flex.ai_baseline
+    //-             span.bullet
+    //-               div
+    //-             span Within the template, add, rename, reorder, format, and concatenate columns 
+    //-           li.flex.ai_baseline
+    //-             span.bullet
+    //-               div
+    //-             span Pick a template and export CSVs with correct data and format
     
-    section.process
-      .container
-        .row
-          h3.col-sm-3 Design
-          //- wireframes
-          .col-sm-6
-            h5 Userflow & Wireframes 
-            p The biggest UX challenge here was to figure out <span class="bold">where the Create Template flow lived</span>. Setting up a template is something that admins are going to do only once. Once the template is ready to go, chances are they’ll keep using the same template for every export, with relatively little post-setup alterations.
-            p My initial thought was to place this creation flow in the same spot where you would do your export. However, after first round of review with my PM, I realize that it’s more ideal to keep this in the setting. I then continued to spec out the feature's flow and drew wireframes to illustrate the UX for each part of the flow.
-        .col-sm-offset-1.col-sm-10
-          img(src="assets/img/export-builder-flow.png" class="full")
-        img(src="assets/img/export-builder-sketches.png").full
-        //- UI
-        .col-sm-offset-3.col-sm-6
-          h5 Interface & Interactions
-          p Once we got a good grasp of the feature architecture, I moved on to design in high-fidelity. Users can either start with some of our suggested pre-canned templates or from scratch.
-        img(src="assets/img/export-builder-create-a-template-flow.gif").full
-        p.col-sm-offset-3.col-sm-6 For me, the most interesting part of this project is designing all the interactions around <span class="bold">string formatting</span>. Admins need to be able to <span class="bold">concatenate</span> 2 columns together and also <span class="bold">edit date format</span>. We happened to already be using React Select in our webapp, which works perfectly for both cases. Check out how we handle these interactions below.
-        div.vid.col-sm-offset-2.col-sm-8
-          video(loop="" autoplay="")
-            source(src="assets/img/export-builder-concat.mp4" type="video/mp4")
-            Your browser does not support the video tag.
-        p.col-sm-offset-3.col-sm-6 Below is a compilation of every mockup I did to spec out the many micro-interactions that happen within this feature, ranging from date/name format to column concatenation and reordering.
-        img(src="assets/img/export-builder-template-details.png").full
-        p.col-sm-offset-3.col-sm-6 Once admins finish setting up their template, they can use it to export needed data from their inbox every time after.
-        img(src="assets/img/export-builder-export-modal.png").full
-        p.col-sm-offset-3.col-sm-6 I also explored the export auto-schedule flow. However, with our resource constraints, we decided to push this back to v2 of this project.
-        img(src="assets/img/export-builder-autoschedule-1.png").full
-        img(src="assets/img/export-builder-autoschedule-2.png").full
+    //- section.process
+    //-   .container
+    //-     .row
+    //-       h3.col-sm-3 Design
+    //-       //- wireframes
+    //-       .col-sm-6
+    //-         h5 Userflow & Wireframes 
+    //-         p The biggest UX challenge here was to figure out <span class="bold">where the Create Template flow lived</span>. Setting up a template is something that admins are going to do only once. Once the template is ready to go, chances are they’ll keep using the same template for every export, with relatively little post-setup alterations.
+    //-         p My initial thought was to place this creation flow in the same spot where you would do your export. However, after first round of review with my PM, I realize that it’s more ideal to keep this in the setting. I then continued to spec out the feature's flow and drew wireframes to illustrate the UX for each part of the flow.
+    //-     .col-sm-offset-1.col-sm-10
+    //-       img(src="assets/img/export-builder-flow.png" class="full")
+    //-     img(src="assets/img/export-builder-sketches.png").full
+    //-     //- UI
+    //-     .col-sm-offset-3.col-sm-6
+    //-       h5 Interface & Interactions
+    //-       p Once we got a good grasp of the feature architecture, I moved on to design in high-fidelity. Users can either start with some of our suggested pre-canned templates or from scratch.
+    //-     img(src="assets/img/export-builder-create-a-template-flow.gif").full
+    //-     p.col-sm-offset-3.col-sm-6 For me, the most interesting part of this project is designing all the interactions around <span class="bold">string formatting</span>. Admins need to be able to <span class="bold">concatenate</span> 2 columns together and also <span class="bold">edit date format</span>. We happened to already be using React Select in our webapp, which works perfectly for both cases. Check out how we handle these interactions below.
+    //-     div.vid.col-sm-offset-2.col-sm-8
+    //-       video(loop="" autoplay="")
+    //-         source(src="assets/img/export-builder-concat.mp4" type="video/mp4")
+    //-         Your browser does not support the video tag.
+    //-     p.col-sm-offset-3.col-sm-6 Below is a compilation of every mockup I did to spec out the many micro-interactions that happen within this feature, ranging from date/name format to column concatenation and reordering.
+    //-     img(src="assets/img/export-builder-template-details.png").full
+    //-     p.col-sm-offset-3.col-sm-6 Once admins finish setting up their template, they can use it to export needed data from their inbox every time after.
+    //-     img(src="assets/img/export-builder-export-modal.png").full
+    //-     p.col-sm-offset-3.col-sm-6 I also explored the export auto-schedule flow. However, with our resource constraints, we decided to push this back to v2 of this project.
+    //-     img(src="assets/img/export-builder-autoschedule-1.png").full
+    //-     img(src="assets/img/export-builder-autoschedule-2.png").full
     
-    section.process
-      .container
-        .row
-          h3.col-sm-3 Launch
-          p.col-sm-6 The feature was launched on March 12, 2019. It has since become a core selling points to our sales team as no other solution in the market was as adaptive as Abacus's Export Builder. You can read more in our blog post <a href="https://blog.abacus.com/csv-download-expense-data/" class="text-link">here</a> and <a href="https://blog.abacus.com/custom-csv-export/" class="text-link">here</a>.
+    //- section.process
+    //-   .container
+    //-     .row
+    //-       h3.col-sm-3 Launch
+    //-       p.col-sm-6 The feature was launched on March 12, 2019. It has since become a core selling points to our sales team as no other solution in the market was as adaptive as Abacus's Export Builder. You can read more in our blog post <a href="https://blog.abacus.com/csv-download-expense-data/" class="text-link">here</a> and <a href="https://blog.abacus.com/custom-csv-export/" class="text-link">here</a>.
           
-    section.process
+    //- section.process
       .container
         .row
           h3.col-sm-3 Takeaways
@@ -159,7 +167,7 @@ html
                 div
               span Break up the feature if needed. This falls right in with the 80% case's ethos: don't try to do everything at once. As a startup, we have to be strategic with our resources. If a part of the functionality is going to a complex add-on, save it for v2! 
             
-    include components/footer.pug
+    //- include components/footer.pug
     
     
           

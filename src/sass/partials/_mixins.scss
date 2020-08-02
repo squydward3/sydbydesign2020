@@ -1,6 +1,5 @@
 //media queries
 @mixin break($breakpoints...) {
-
   @if length($breakpoints)==1 {
     @media (max-width: nth($breakpoints, 1)) {
       @content;

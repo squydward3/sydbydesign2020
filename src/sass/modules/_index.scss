@@ -1,26 +1,31 @@
-#hero {
-  height: 91vh;
-  width: 100%;
-  background: url('/assets/img/syd-by-design.png') no-repeat;
-  background-size: contain;
-  background-position: bottom;
+.hero {
+  height: 90vh;
+  .hero-type svg {
+    width: 100%;
+    height: auto;
+  }
 }
 
 // Projects
 .project {
-  margin: 240px 0 0;
-  @include break($screen-tablet) { margin: 20px 0 0; }
-  &#connected-orgs {
-    margin: 180px 0 0;
-    @include break($screen-tablet) { margin: 40px 0 0; }
+  .name, .info {
+    padding: 1.4rem;
+    @media (min-width: $screen-desktop) and (max-width: $screen-desktop-lg) {
+      padding: 1.125rem;
+    }  
   }
-  .info {
-    padding-top: 102px;
-    h1 {padding: 8px 0 24px}
-    button {
-      @include break($screen-tablet) { margin-bottom: 24px }
-    }
+  .name {
+    border-right: 1px solid $china-blue;
+    h2 {padding-bottom: 12px;}
+    &:hover {
+      background-color: $china-blue;
+      h2, p {color: $white}
+    }  
   }
+}
+.project-hero {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 // Project Blurbs

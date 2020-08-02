@@ -5,6 +5,14 @@ section#header {
     h1 {padding-bottom: 28px}
   }
 }
+.project-header {
+  height: 90vh;
+  position: relative;
+  .info {
+    position: absolute;
+    bottom: 0;
+  }
+}
 
 section.process {
   margin: 148px 0 0;
