@@ -1,11 +1,13 @@
 @import "partials/bootstrap-grid";
 @import "partials/vars";
 @import "partials/mixins";
-@import "partials/layout";
 @import "partials/base";
 
 @import "modules/navbar";
 @import "modules/about";
 @import "modules/index";
 @import "modules/project-pages";
+@import "modules/case";
 @import "modules/footer";
+
+@import "partials/layout";

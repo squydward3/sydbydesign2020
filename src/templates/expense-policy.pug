@@ -1,0 +1,144 @@
+html
+  head
+    include components/head.pug
+    title Expense Policy
+  body
+    //- Mixins
+    include components/bullets.pug
+
+    //- Nav
+    include components/navbar.pug
+    +nav-desktop("abacus.html")
+    +nav-mobile("abacus.html")
+
+    //- Case study header
+    section.case-header.container-wrapper.border-all
+      .container-fluid.padding-0
+        .row.row-no-gutters
+          .col-sm-6.col-md-6.padding-0.flex.full-height.case-cover.expense-policy.border-right.border-left
+          .col-sm-5.flex.flex-col.jc-sb.full-height
+            .svg-text.padding-tb18
+              <svg width="521" height="209" viewBox="0 0 521 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M0.464844 2.14209H56.5983V15.8333H14.9629V37.348H49.3493V50.946H14.9629V75.6274H56.5983V89.3186H0.464844V2.14209Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M93.4014 45.2646L64.777 2.14209H82.5278L102.509 32.7843L122.119 2.14209H140.148L111.524 45.2646L140.892 89.3186H123.048L102.602 57.5588L81.7843 89.3186H63.8477L93.4014 45.2646Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M186.429 2.14209C189.031 2.14209 191.262 2.32836 193.306 2.60778C200.648 3.72542 206.132 6.79895 209.942 11.7352C213.752 16.6715 215.518 22.9117 215.518 30.4558C215.518 37.9068 213.659 44.0539 209.849 49.0833C206.039 54.1127 200.555 57.1862 193.306 58.397C191.262 58.6764 189.031 58.8627 186.429 58.8627H164.961V89.2254H150.463V2.14209H186.429ZM191.262 44.7058C194.608 43.8676 197.024 42.098 198.511 39.397C199.998 36.696 200.834 33.7156 200.834 30.4558C200.834 27.196 200.091 24.3088 198.511 21.6078C197.024 18.9068 194.608 17.2303 191.262 16.3921C189.775 16.0195 188.009 15.7401 185.779 15.7401H164.868V45.1715H185.779C188.009 45.2646 189.775 45.0784 191.262 44.7058Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M227.602 2.14209H283.735V15.8333H242.1V37.348H276.486V50.946H242.1V75.6274H283.735V89.3186H227.602V2.14209Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M298.232 2.14209H313.009L353.344 63.5195V2.14209H368.12V89.3186H353.344L313.009 27.848V89.3186H298.232V2.14209Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M393.027 83.7303C386.428 78.794 382.525 72.0881 381.131 63.6126L396.372 61.2842C397.581 66.4068 400.183 70.3185 404.086 73.2058C407.989 76.093 412.729 77.4901 418.119 77.4901C423.045 77.4901 427.227 76.3724 430.852 74.1372C434.383 71.9019 436.149 68.8283 436.149 65.0097C436.149 62.495 435.406 60.446 433.826 58.8626C432.246 57.2793 429.829 55.8822 426.484 54.8577L403.993 48.3381C398.51 46.7548 393.863 44.2401 390.146 40.9803C386.428 37.7205 384.569 32.6911 384.569 25.8921C384.569 20.4901 385.964 15.8332 388.752 12.0146C391.54 8.10283 395.35 5.21558 400.183 3.2597C405.015 1.30381 410.499 0.372442 416.54 0.465579C425.461 0.558716 432.896 2.79401 438.844 7.2646C444.792 11.7352 448.788 17.9754 450.833 25.9852L435.127 28.6862C434.197 24.1224 431.874 20.4901 428.249 17.9754C424.625 15.4607 420.35 14.1568 415.61 14.1568C411.335 14.1568 407.711 15.1813 404.644 17.2303C401.577 19.2793 400.09 21.8871 400.09 25.147C400.09 28.0342 401.205 30.2695 403.528 31.7597C405.852 33.2499 408.826 34.5538 412.636 35.6715L428.249 39.8626C432.525 41.0734 436.242 42.4705 439.402 43.9607C442.562 45.4509 445.35 47.7793 447.859 51.0391C450.368 54.2989 451.576 58.5832 451.576 63.8921C451.576 69.6666 449.997 74.696 446.837 78.794C443.677 82.8921 439.588 85.9656 434.383 88.0146C429.272 90.0636 423.603 91.0881 417.469 91.0881C407.711 91.1813 399.625 88.6666 393.027 83.7303Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M464.402 2.14209H520.629V15.8333H478.993V37.348H513.38V50.946H478.993V75.6274H520.629V89.3186H464.402V2.14209V2.14209Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M36.4311 109.863C39.0333 109.863 41.2638 110.049 43.3084 110.328C50.6504 111.446 56.1336 114.52 59.944 119.456C63.7544 124.392 65.5201 130.632 65.5201 138.176C65.5201 145.627 63.6614 151.774 59.851 156.804C56.0407 161.833 50.5574 164.907 43.3084 166.118C41.2638 166.397 39.0333 166.583 36.4311 166.583H14.9629V196.946H0.464844V109.77H36.4311V109.863ZM41.2638 152.426C44.6095 151.588 47.0259 149.819 48.5128 147.118C49.9998 144.417 50.8362 141.436 50.8362 138.176C50.8362 134.917 50.0927 132.029 48.5128 129.328C47.0259 126.627 44.6095 124.951 41.2638 124.113C39.7768 123.74 38.011 123.461 35.7806 123.461H14.9629V152.892H35.8735C38.011 152.985 39.8698 152.799 41.2638 152.426Z" fill="#2150BA" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M92.285 193.221C85.9653 189.402 81.2256 184.093 77.8799 177.201C74.5342 170.309 72.8613 162.392 72.8613 153.451C72.8613 144.51 74.5342 136.593 77.8799 129.701C81.2256 122.809 86.0583 117.5 92.285 113.681C98.6046 109.863 105.947 108 114.497 108C123.047 108 130.482 109.863 136.708 113.681C143.028 117.5 147.768 122.809 151.114 129.701C154.459 136.593 156.039 144.51 156.039 153.451C156.039 162.392 154.366 170.309 151.114 177.201C147.768 184.093 143.028 189.402 136.708 193.221C130.389 197.039 123.047 198.902 114.497 198.902C105.947 198.902 98.6046 196.946 92.285 193.221ZM134.013 176.642C138.474 170.961 140.705 163.23 140.705 153.451C140.705 143.672 138.474 136.034 134.013 130.353C129.552 124.765 123.047 121.877 114.497 121.784C105.947 121.691 99.4411 124.485 94.9801 130.167C90.5192 135.848 88.2887 143.578 88.2887 153.451C88.1958 163.23 90.4263 170.868 94.8872 176.549C99.4411 182.137 105.947 185.025 114.497 185.118C123.047 185.118 129.552 182.324 134.013 176.642Z" fill="#2150BA" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M169.33 109.863H183.828V183.348H222.211V197.039H169.33V109.863V109.863Z" fill="#2150BA" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M233.734 109.863H248.232V197.039H233.734V109.863V109.863Z" fill="#2150BA" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M281.039 193.221C274.719 189.402 269.979 184.093 266.634 177.201C263.288 170.309 261.615 162.392 261.615 153.451C261.615 144.51 263.288 136.593 266.634 129.701C269.979 122.809 274.812 117.5 281.039 113.681C287.359 109.863 294.7 108 303.251 108C313.102 108 321.373 110.422 328.065 115.358C334.756 120.294 339.496 127.093 342.284 135.848L327.693 139.853C326.02 134.078 323.139 129.701 318.957 126.534C314.775 123.368 309.57 121.784 303.251 121.784C294.7 121.784 288.195 124.578 283.641 130.26C279.087 135.941 276.857 143.578 276.857 153.358C276.764 163.137 278.994 170.868 283.548 176.456C288.102 182.137 294.608 184.931 303.158 184.931C309.477 184.931 314.775 183.348 318.864 180.181C322.953 177.015 325.834 172.544 327.6 166.77L342.191 170.868C339.496 179.623 334.756 186.422 327.972 191.358C321.28 196.294 313.009 198.716 303.158 198.716C294.701 198.902 287.266 196.946 281.039 193.221Z" fill="#2150BA" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M373.046 161.368L343.492 109.956H360.499L380.481 144.696L400.462 109.956H417.469L387.916 161.368V197.039H373.139V161.368H373.046Z" fill="#2150BA" stroke="#2150BA" stroke-miterlimit="10"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="521" height="209" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            .padding-bottom18
+              p The Expense Policy page is where companies set up rules to pre-screen expense submissions. While it was one of the most important parts of the product, this page was also the oldest and had the most heinous usability issues. I embarked on a 6-week long project to redesign this core platform experience for Abacus.
+    
+    //- Background
+    section.container-wrapper
+      .container-fluid
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-2.col-md-8.col-sm-12.padding-0
+            h3 BACKGROUND
+            p.padding-tb18 Abacus is the only real-time expense management software in the market. Everyone else does monthly expense reports. What this means is that we have incredibly timely and granular <span class="bold">quality control</span> over every single expense submitted, unlike other expense solutions whose control stops at the report level.
+            p.padding-bottom-18 The #[span(class="bold") Expense Policy] page is where companies set up rules to control the quality of the flow of expense submissions. By defining specific requirements for certain types of expense and filtering out policy-violated submissions at an early stage, we make admins’ job easier.
+            img(src="assets/img/policy-page-trad-vs-rt.png" class="full")
+
+    //- Problem
+    include components/content.pug
+      block content     
+        h3 Problem
+        p.padding-tb18 When I began working at Abacus, there were already many problems with this supposed-to-be incredibly powerful feature page. They could be grouped under 2 categories:
+        +bullets(
+          "Page UX problems: this page wasn’t built to scale. The 2-column layout clearly did not account for large companies with complex rule systems. In addition, lack of scannability, poor categorization, and inconsistent-turns-confusing UI interactions makes this page very hard to use.",
+          "Rule creation flow problems: Again, poor rule-type categorization hinders admins’ ability to create a rule that serves their need. These steps were designed in mad-lib style…"
+        )
+        img(src="assets/img/policy-old-ui.png").full
+
+    //- Goal
+    include components/content.pug
+      block content
+        h3.padding-bottom18 GOAL
+        +bullets(
+          "Create an experience that enables our admins to <span class='bold'>translate</span> their companies’ expense policy to <span class='bold'>actionable rule items</span> on Abacus",
+          "Revamp the page’s UX & UI to <span class='bold'>support larger, more complex organizations</span> (with a lot more rules!)",
+          "Focus on <span class='bold'>low-hanging fruits</span>. There are certain backend changes that will make this page fantastic, but there are also immediate frontend changes that will undoubtedly make this page 10 times easier to read and use. Focus on the latter first."
+        )
+
+    //- Redesign the page
+    include components/content.pug
+      block content            
+        h3 PAGE REDESIGN
+        p.padding-tb18 This was my first time (re)designing an entire web app page jam-packed with functionalities and micro-interactions. In hindsight, I did try to tackle too much in too much detail during the first round. Because there was so much co-relation between how a rule is created and how it manifests itself on a page, I stumbled a bit to find a good starting point. Finally, I settled on redesigning the page itself first.
+        img(src="assets/img/policy-full-page.png").full
+        p.padding-tb18 At a first glance, you will immediately notice that it now has a one-column layout. Rules are now grouped under one sections but are clearly labeled and color-coded to signify their severity degree/type–Block, Warn, Mile(age), and Auto. I also create a “highlighting logic” for each type of rule based on their differentiators to make it easier for one to scan through the page. For example, for requirement rules, we bold the requirement (note, receipt, etc.) and for auto-approval rule, we bold the merchant.
+        p.blockquote I also create a <span class="bold">highlighting logic</span> for each type of rule based on their differentiators.
+
+    //- Redesign the modal    
+    include components/content.pug
+      block content
+        h3 MODAL REDESIGN
+        h5.padding-tb18 Study & Research
+        p.padding-bottom18 Redesigning the rule-creation modal was the most UX-heavy part of the project. It involves redesigning the entire information architecture of rule creation modal, from which criterion we start the user with to which rules could be logically grouped together. I started tackling this by <span class="bold">analyzing our old rule creation modal’s architecture</span>:
+        img(src="assets/img/policy-page-whiteboard.png").full
+        p.padding-tb18 I also used our internal dashboard, Abadash, to look up and study the rules of 10 differents companies with 20+ rules. By doing close <span class="bold">rule sentence analysis</span>, I started drawing patterns about one common rule formula. 
+        img(src="assets/img/policy-full-studied-rules.png").full
+        h5.padding-tb18 Redesign Modal's IA
+        p I came to understand that part of the reason why it was difficult to use the old rule creation was because it was so dense with unstructured content. In addition, users aren't able to preview the rule they're trying to construct. I decided to separate the rule creation flow into 3 parts:
+        +bullets(
+          "<span class='bold'>Select</span> a rule type (requirement, budget, or time limit)",
+          "<span class='bold'>Construct</span> the rule based on its type",
+          "<span class='bold'>Preview</span> the rule and make adjustments if needed"
+        )
+        p Check out a detailed explanation of the first 2 steps in the proposed new information architecture below:
+        img(src="assets/img/policy-page-rule-modal-ia.png").full  
+        h5.padding-tb18 Redesign Modal's UI
+        p After my proposal for a new modal's architecture was approved, I started working on the new rule modal's UI. There were serveral UI concepts. I was working with both horizontal and verticle modal wizards. After a couple of reviews, we decided to go with the concept below.
+        img.padding-tb18(src="assets/img/policy-page-pick-a-rule-type.png").full
+        img(src="assets/img/policy-page-create-3-rule-types.png").full
+        img.padding-tb18(src="assets/img/policy-page-preview-rule.png").full
+        img(src="assets/img/policy-page-before-after.png").full
+        
+    //- Usability testing
+    include components/content.pug
+      block content
+        h3 TESTING
+        p.padding-tb18 I creative some quick InVision prototypes to test out the new rule creation flow. Working with 2 members of the customer success team, we hopped on a couple of calls with our customers and did a cognitive walkthrough with each of them. We also gave them $50 Amazon giftcards!
+        img(src="assets/img/policy-page-testing.png").full
+        p.padding-tb18 Among what we found:
+        ul.bullet-list
+          li.flex.jc_sb.ai_baseline
+            span.bullet
+              div
+            span <span class="bold">Copy is important</span>! We spend the an entire round iteration working on improving copy for the different rule creation modals in order to make these mad-libs read more like real sentences. We also finessed existing tooltip copy and added extra contextual help to guide users through these flows. It is our goal for this page to be self-served instead of relying heavily on implementation specialists as we did before. 
+          li.flex.jc_sb.ai_baseline
+            span.bullet
+              div
+            span Among the extra features we added, the <span class="bold">low-hanging fruits</span> such as rule editing and previewing turn out to be the most fruitful. For v1 of this project, we actually scaled back some of the new features but these remain on the roadmap.
+
+    //- Launch         
+    include components/content.pug
+      block content
+        h3 Launch
+        p.padding-tb18 This project was launched mid-April, 2019.
+             
+    //- include components/footer.pug
+    
+    
+          
+
+
+            
+        
+      
+          
+      

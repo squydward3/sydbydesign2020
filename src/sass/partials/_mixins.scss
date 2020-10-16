@@ -22,6 +22,11 @@
   }
 }
 
+// border
+@mixin border($direction...) {
+  border-#{$direction}: 1px solid $china-blue;
+}
+
 @mixin ab-po($top, $right, $bottom, $left) {
   position: absolute;
   top: $top;

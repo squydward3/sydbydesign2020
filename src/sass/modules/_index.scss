@@ -1,12 +1,11 @@
 .hero {
   height: 90vh;
-  .hero-type svg {
-    width: 100%;
-    height: auto;
-  }
+  @include break($screen-tablet) {
+    height: auto
+  }  
 }
 
-// Projects
+// Project sections
 .project {
   .name, .info {
     padding: 1.4rem;
@@ -15,11 +14,13 @@
     }  
   }
   .name {
-    border-right: 1px solid $china-blue;
+    @media (min-width: $screen-tablet) {
+      @include border(right);
+    }
     h2 {padding-bottom: 12px;}
     &:hover {
       background-color: $china-blue;
-      h2, p {color: $white}
+      h2, p, svg {color: $white; fill: $white}
     }  
   }
 }

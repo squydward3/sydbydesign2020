@@ -1,16 +1,13 @@
-section#header {
-  padding-top: 56px;
-  .content {
-    padding-bottom: 72px;
-    h1 {padding-bottom: 28px}
-  }
-}
-.project-header {
-  height: 90vh;
+section#project-header {
+  height: 65vh;
   position: relative;
-  .info {
+  ul.info {
     position: absolute;
     bottom: 0;
+  }
+  @include break($screen-tablet) {
+    height: auto;
+    ul.info {position: relative;}
   }
 }
 

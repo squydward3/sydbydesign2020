@@ -1,25 +1,15 @@
 // typescale: perfect 5th
 @font-face {
-  font-family: 'Freight Big Book';
-  src: url('/assets/fonts/FreightBigBook.ttf')
-}
-@font-face {
-  font-family: 'Freight Big Bold';
-  src: url('/assets/fonts/FreightBigBold.ttf')
-}
-@font-face {
-  font-family: 'Neue Hass Grotesk';
-  src: url('/assets/fonts/NeueHaasGrotDisp-55Roman.otf')
-}
-@font-face {
-  font-family: 'Neue Hass Grotesk Bold';
-  src: url('/assets/fonts/NeueHaasGrotDisp-65Medium.otf')
-}
-@font-face {
   font-family: 'Manrope Extrabold';
   src: url('/assets/fonts/Manrope-ExtraBold.woff2');
   src: url('/assets/fonts/Manrope-ExtraBold.ttf');
   src: url('/assets/fonts/Manrope-ExtraBold.otf');
+}
+@font-face {
+  font-family: 'Manrope Bold';
+  src: url('/assets/fonts/Manrope-Bold.woff2');
+  src: url('/assets/fonts/Manrope-Bold.ttf');
+  src: url('/assets/fonts/Manrope-Bold.otf');
 }
 @font-face {
   font-family: 'Manrope Regular';

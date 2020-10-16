@@ -1,0 +1,24 @@
+html
+  head
+    include head.pug
+    title #{title}
+  body
+    include bullets.pug
+
+    block navigation
+        
+        nav.desk-only
+            ul
+                a(href="index.html")
+                    li.flex.jc-center.ai-center.border-all 
+                        h5.text-link.smaller Work
+                +icon("selfmade.html")
+                a(href="about.html")
+                    li.flex.jc_center.ai-center.border-all
+                        h5.text-link.smaller About
+
+
+    block section
+        include content.pug
+
+    block footer

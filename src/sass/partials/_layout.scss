@@ -4,12 +4,38 @@ html, body {
   position: relative;
   .container-wrapper {
     margin-left: 70px;
-    border: 1px solid $china-blue;
+    // border: 1px solid $china-blue;
+    @include break($screen-tablet) {
+      margin-left: 0px;
+    };
   }
+}
+.margin {
+  &-top48 {margin-top:3rem}
 }
 .padding{
   &-0 {padding: 0};
-  &-24 {padding: 1.4rem;};
-  &-top18 {padding-top: 18px;};
-  &-top30 {padding-top: 30px;};
+  &-24 {padding: 1.5rem};
+  &-tb64 {padding-top: 4rem; padding-bottom: 4rem;};
+  &-tb18 {padding-top: 1.125rem; padding-bottom: 1.125rem;};
+  &-bottom18 {padding-bottom: 1.125rem};
+  &-bottom30 {padding-bottom: 1.875rem};
+  &-top18 {padding-top: 1.125rem};
+  &-top30 {padding-top: 1.875rem};
+  &-top64 {padding-top: 4rem};
 }
+.margin-offset-top {margin-top: -1px;}
+.border {
+  &-all {border: 1px solid $china-blue}
+  &-top {border-top: 1px solid $china-blue}
+  &-bottom {border-bottom: 1px solid $china-blue}
+  &-right {border-right: 1px solid $china-blue}
+  &-left {border-left: 1px solid $china-blue}
+}
+.no-border{
+  &-top {border-top: 0}
+  &-bottom {border-bottom: 0}
+  &-right {border-right: 0}
+  &-left {border-left: 0}
+}
+

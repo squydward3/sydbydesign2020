@@ -1,0 +1,26 @@
+section.case-header {
+    height: 90vh;
+    min-height: 700px;
+    @include break($screen-desktop) {
+        height: auto;
+        min-height: auto;
+    };
+    .case-cover {@include break($screen-tablet) {
+        height: 300px;
+    };}
+    .expense-policy {
+        background: url("/assets/img/abacus/expense-policy.png") no-repeat;
+        background-size: cover;
+        background-position: left center;
+    }
+    .export-builder {
+        background: url("/assets/img/abacus/export-builder.png") no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .monthly-recap {
+        background: url("/assets/img/selfmade/monthly-recap-ig.png") no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
