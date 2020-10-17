@@ -8,9 +8,6 @@ html
 
     //- Nav
     include components/navbar.pug
-    +nav-desktop("abacus.html")
-    +nav-mobile("abacus.html")
-
     
     //- Case study header
     section.case-header.container-wrapper.border-all
@@ -133,6 +130,9 @@ html
           "Design for the 80% case first. It is easy to get caught up in all the possible functionalities that a feature could bring in. However, we could end up with an overly complex feature with only 20% of our customers actually needing the complexity. Consider it a successful feature if you could account for the 80% case.",
           "Break up the feature if needed. This falls right in with the 80% case's ethos: don't try to do everything at once. As a startup, we have to be strategic with our resources. If a part of the functionality is going to a complex add-on, save it for v2!"
         )
+
+    //- Footer
+    include components/footer.pug
 
 
 

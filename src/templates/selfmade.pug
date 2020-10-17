@@ -5,8 +5,6 @@ html
   body
     //- Nav
     include components/navbar.pug
-    +nav-desktop("index.html")
-    +nav-mobile("index.html")
     
     //- Info
     section#project-header.container-wrapper
@@ -52,8 +50,7 @@ html
         p.padding-tb18 I led design for Monthly Recap, a reporting feature that shows our marketing partners how their Facebook ads, emails, and Instagram posts perform every month.
         a(href="monthly-recap.html")
           button View case study
-        img.padding-tb18.full(src="assets/img/selfmade/1.png")
-        img.full(src="assets/img/selfmade/2.png")
+        img.padding-tb18.full(src="assets/img/selfmade/monthly-recap-ig.png")
     
     //- Message
     include components/content.pug
@@ -69,3 +66,7 @@ html
         h3 MESSAGE
         p.padding-tb18 Collabs is a fully responsive web app. One of the first projects I worked on was redesigning the search and filter functionality on mobile.
         img.full(src="assets/img/selfmade/mobile-filters.png")
+    
+    //- Footer
+    include components/footer.pug
+

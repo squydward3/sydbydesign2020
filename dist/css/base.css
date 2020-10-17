@@ -23,7 +23,11 @@ body {
 
 /* Grainy texture animation by Geoff Graham https://css-tricks.com/snippets/css/animated-grainy-texture/ */
 
-main::before {
+main a.menu__item-link, main .marquee span {
+	font-family: 'Manrope Bold', Helvetica, sans-serif;
+	color: #2150BA;
+}
+/* main::before {
 	animation: grain 8s steps(10) infinite;
 	background-image: url(../img/noise.png);
 	content: '';
@@ -33,7 +37,7 @@ main::before {
 	position: fixed;
 	top: -100%;
 	width: 300%;
-}
+} */
 
 @keyframes grain {
   0%, 100% { transform:translate(0, 0); }
@@ -98,38 +102,53 @@ a:focus {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	padding: 10vh 0 25vh;
+	padding: 5vh 0 25vh;
 	--marquee-width: 100%;
 	--offset: 20vw;
 	--move-initial: calc(-25% + var(--offset));
 	--move-final: calc(-50% + var(--offset));
-	--item-font-size: 10vw;
-	counter-reset: menu;
+	--item-font-size: 9vw;
+	counter-reset: menu;	
+}
+@media (max-width: 414px) {
+	.menu {--item-font-size: 11.5vw;}
 }
 
+/* Menu item */
 .menu__item {
 	cursor: default;
 	position: relative;
-	padding: 0 5vw;
+	padding: 0 2vw;
 }
 
 .menu__item-link {
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
-	-webkit-text-stroke: 0.5px #000;
-	text-stroke: 0.5px #000;
+	-webkit-text-stroke: 1.5px #2150BA;
+	text-stroke: 1.5px #2150BA;
 	-webkit-text-fill-color: transparent;
 	text-fill-color: transparent;
 	color: transparent;
 	transition: opacity 0.4s;
 }
+@media (max-width: 414px) {
+	.menu__item-link {
+		-webkit-text-stroke: 1px #2150BA;
+		text-stroke: 1px #2150BA;
+	}
+}
 
-.menu__item-link::before {
+
+.menu__item-link.case::before {
 	all: initial;
-	font-family: sofia-pro, sans-serif;
-	counter-increment: menu;
-	content:  counter(menu);
+	font-family: 'Manrope Regular', Helvetica, sans-serif;
+	word-spacing: .05rem;
+	font-size: 1.25vw;
+	line-height: 1.875rem;  
+	/* counter-increment: menu;
+	content:  counter(menu); */
+	content: "↳ Case";
 	position: absolute;
 	bottom: 60%;
 	left: 0;
@@ -196,9 +215,10 @@ a:focus {
 	white-space: nowrap;
 	font-size: var(--item-font-size);
 	padding: 0 1vw;
-	font-weight: 900;
 	line-height: 1.15;
 }
+
+.menu__item-link.case {padding-left: 5vw;}
 
 .marquee span {
 	font-style: italic;

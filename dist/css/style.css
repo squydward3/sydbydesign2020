@@ -744,7 +744,7 @@ h1 {
 
 h2 {
   font-family: 'Manrope Extrabold', Helvetica, sans-serif;
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: #2150BA; }
 
 h3 {
@@ -1110,6 +1110,8 @@ html, body {
   padding-bottom: 1.875rem; }
 .padding-top18 {
   padding-top: 1.125rem; }
+.padding-top24 {
+  padding-top: 1.5rem; }
 .padding-top30 {
   padding-top: 1.875rem; }
 .padding-top64 {

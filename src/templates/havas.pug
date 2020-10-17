@@ -5,8 +5,6 @@ html
   body
     //- Nav
     include components/navbar.pug
-    +nav-desktop("index.html")
-    +nav-mobile("inhdex.html")
 
     //- Info
     section#project-header.container-wrapper
@@ -38,7 +36,7 @@ html
     //- TD Ameritrade
     include components/content.pug
       block content
-        h3 COLLABS
+        h3 TD AMERITRADE
         p.padding-tb18 After TD Bank announed its re-brand which highlights a much modern and youthful tone-of-voice, Havas was tasked with designing a new brand expression guide book for the Omaha native. For this project, I paired up with a senior UI designer to brainstorm, design, and prototype highly interactive modules for TD's digital style guide, originally created in PDF format by 2 creative directors.The following is a compilation of multiple motion prototypes and interactive modules that were created for the pitch.
         div.vid
           video(loop="" autoplay="")
@@ -72,3 +70,6 @@ html
       block content
         h3 SOME BACKGROUND
         p.padding-tb18 I love animations. I learned to write my first few lines of JavaScript to animate something on my website back in 2015. I soon picked up different methods of on-screen animating such as CSS, JavaScript, and After Effects. Look where they got me!
+
+    //- Footer
+    include components/footer.pug
