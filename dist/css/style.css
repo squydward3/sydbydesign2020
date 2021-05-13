@@ -1148,6 +1148,9 @@ html, body {
   padding-bottom: 4rem; }
 .padding-bottom18 {
   padding-bottom: 1.125rem; }
+@media (max-width: 992px) {
+  .padding-bottom18-mobile {
+    padding-bottom: 1.125rem; } }
 .padding-bottom30 {
   padding-bottom: 1.875rem; }
 .padding-top18 {
