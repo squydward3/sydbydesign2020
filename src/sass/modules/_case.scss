@@ -8,6 +8,11 @@ section.case-header {
     .case-cover {@include break($screen-tablet) {
         height: 300px;
     };}
+    .add-on {
+        background: url("/assets/img/kickstarter/add-on-main-img.png") no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
     .expense-policy {
         background: url("/assets/img/abacus/expense-policy.png") no-repeat;
         background-size: cover;
@@ -22,5 +27,8 @@ section.case-header {
         background: url("/assets/img/selfmade/monthly-recap-ig.png") no-repeat;
         background-size: cover;
         background-position: center center;
+    }
+    img.company-logo {
+        width: inherit;
     }
 }

@@ -1062,6 +1062,10 @@ section.case-header {
   @media (max-width: 768px) {
     section.case-header .case-cover {
       height: 300px; } }
+  section.case-header .add-on {
+    background: url("/assets/img/kickstarter/add-on-main-img.png") no-repeat;
+    background-size: cover;
+    background-position: center center; }
   section.case-header .expense-policy {
     background: url("/assets/img/abacus/expense-policy.png") no-repeat;
     background-size: cover;
@@ -1074,6 +1078,8 @@ section.case-header {
     background: url("/assets/img/selfmade/monthly-recap-ig.png") no-repeat;
     background-size: cover;
     background-position: center center; }
+  section.case-header img.company-logo {
+    width: inherit; }
 
 footer {
   margin: 200px 0 100px; }
