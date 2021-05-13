@@ -1,7 +1,7 @@
 .hero {
   height: 90vh;
   @include break($screen-tablet) {
-    height: auto
+    height: auto;
   }  
 }
 
@@ -20,7 +20,7 @@
     h2 {padding-bottom: 12px;}
     &:hover {
       background-color: $china-blue;
-      h2, p, svg {color: $white; fill: $white}
+      h2, h3, p, svg {color: $white; fill: $white}
     }  
   }
 }

@@ -7,8 +7,8 @@ html
     include components/navbar.pug
 
     //- Info
-    section#project-header.container-wrapper
-      .container-fluid.full-height
+    section#project-header.container-wrapper.no-border-mobile-top
+      .full-height
         .row.row-no-gutters
           .col-sm-6.padding-24
             h1 Havas
@@ -73,3 +73,7 @@ html
 
     //- Footer
     include components/footer.pug
+
+    //- Social Media
+    include components/social-media.pug
+

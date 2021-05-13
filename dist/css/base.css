@@ -140,15 +140,14 @@ a:focus {
 }
 
 
-.menu__item-link.case::before {
+.menu__item-link::before {
 	all: initial;
 	font-family: 'Manrope Regular', Helvetica, sans-serif;
 	word-spacing: .05rem;
 	font-size: 1.25vw;
 	line-height: 1.875rem;  
-	/* counter-increment: menu;
-	content:  counter(menu); */
-	content: "↳ Case";
+	counter-increment: menu;
+	content:  counter(menu);
 	position: absolute;
 	bottom: 60%;
 	left: 0;
@@ -218,7 +217,7 @@ a:focus {
 	line-height: 1.15;
 }
 
-.menu__item-link.case {padding-left: 5vw;}
+.menu__item-link {padding-left: 5vw;}
 
 .marquee span {
 	font-style: italic;

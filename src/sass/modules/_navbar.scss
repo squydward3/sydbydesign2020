@@ -40,7 +40,8 @@ nav.mobile-only {
   width: 100%;
   .nav-item {
     position: relative;
-    width: calc((100%-70px)/2);
+    // width: calc((100%-70px)/2);
+    width: 33.3%;
     height: 60px;
     background-color: $white;
     h5{
@@ -60,7 +61,7 @@ nav.mobile-only {
     &:active {
       h5:after {opacity: 1;}
     }
-    &.home{width:70px;}
+    // &.home{width:70px;}
   }
 }
 .fixed {

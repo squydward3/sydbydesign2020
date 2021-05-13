@@ -3,5 +3,14 @@
   min-height: 700px;
   @include break($screen-desktop) {
     height: auto;
+    .portrait {border-right: 0;}
   };
+}
+
+#experience {
+  .article:hover {
+    background-color: $china-blue;
+    h5 {color: $white};
+    svg > path {fill: $white}  
+  }
 }

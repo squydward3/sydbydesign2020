@@ -45,6 +45,10 @@ a {
   // &:hover {color: $china-blue; text-decoration: underline;}
 }
 
+.text-align {
+  &-right {text-align: right;}
+}
+
 
 // button
 button {

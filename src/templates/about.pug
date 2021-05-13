@@ -7,10 +7,10 @@ html
     include components/navbar.pug
     
     //- About
-    section#about.container-wrapper.border-all.no-border-bottom
+    section#about.container-wrapper.border-all.no-border-bottom.no-border-mobile-top
       .container-fluid
         .row
-          .col-sm-5.col-md-6.flex.jc-center.ai-center.full-height.border-right
+          .col-sm-5.col-md-6.portrait.flex.jc-center.ai-center.full-height.border-right
             img(src="assets/misc/me.png")
           .col-sm-5.flex.flex-col.jc-sb.full-height
             .svg-text
@@ -43,15 +43,15 @@ html
             if item == items[0]
               h5= item
             else if item == items[1] && items.length == 3
-              p.desk-only= item
+              p.text-align-right.desk-only= item
             else
-              p= item
+              p.text-align-right= item
       .row
         .col-sm-10
           hr.clear
     
     //- Experience
-    section#experience.container-wrapper.border-all
+    section#experience.container-wrapper.border-all.no-border-bottom
         .container-fluid.padding-tb64
           .row
             h3.col-sm-3 EXPERIENCE
@@ -75,40 +75,60 @@ html
           +ingredients ('dotCOMM awards', '2020')
           +ingredients ('Gold', 'Website/Small Business')
 
+          //- PRESS
           .row
             h3.col-sm-3.padding-top64 PRESS
           .row
-            .col-sm-10.flex.jc-sb
-              h5 The Verge
-              a(href="https://www.theverge.com/2020/9/22/21450677/kickstarter-creators-add-on-rewards" target="_blank") Kickstarter will let creators include bonus ‘add-on’ rewards for their campaigns
-          .row
-            .col-sm-10
-              hr.clear
-          .row
-            .col-sm-10.flex.jc-sb
-              h5 KICKSTARTER BLOG
-              a(href="https://www.kickstarter.com/articles/product-upgrades-we-re-rolling-out-a-new-add-ons-feature" target="_blank") Product Upgrades: We’re Rolling Out A New Add-ons Feature
-          .row
-            .col-sm-10
-              hr.clear
-          .row
-            .col-sm-10.flex.jc-sb
-              h5 Authority Mag
-              a(href="https://medium.com/authority-magazine/kickstarters-sydney-anh-mai-kill-your-darlings-you-re-in-service-of-the-product-not-your-ego-e634c7162c4e" target="_blank") Kickstarter’s Sydney Anh Mai: “Kill your darlings; you’re in service of the product, not your ego”
-          .row
-            .col-sm-10
-              hr.clear
-          .row
-            .col-sm-10.flex.jc-sb
-              h5 DICE INSIGHTS
-              a(href="https://insights.dice.com/2020/10/13/embracing-cultural-design-differences-advice-for-designers/" target="_blank") Embracing Cultural Design Differences: Advice for Designers”
+            .article.col-sm-10
+              .flex.jc-sb.ai-center
+                h5 The Verge
+                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.75 12.811H12.25V9.31104H14V14.561H0V0.561035H5.25V2.31104H1.75V12.811ZM9.85795 3.04588L7.36969 0.561035H14.0006V7.18988L11.5149 4.70504L7.78533 8.43744L6.12695 6.77688L9.85795 3.04588Z" fill="#2150BA"/>
+                </svg>
+              a.stretched-link(href="https://www.theverge.com/2020/9/22/21450677/kickstarter-creators-add-on-rewards" target="_blank")
+          
           .row
             .col-sm-10
               hr.clear
 
+          .row
+            .article.col-sm-10
+              .flex.jc-sb.ai-center
+                h5 KICKSTARTER BLOG
+                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.75 12.811H12.25V9.31104H14V14.561H0V0.561035H5.25V2.31104H1.75V12.811ZM9.85795 3.04588L7.36969 0.561035H14.0006V7.18988L11.5149 4.70504L7.78533 8.43744L6.12695 6.77688L9.85795 3.04588Z" fill="#2150BA"/>
+                </svg>
+              a.stretched-link(href="https://www.kickstarter.com/articles/product-upgrades-we-re-rolling-out-a-new-add-ons-feature" target="_blank")
+          
+          .row
+            .col-sm-10
+              hr.clear
 
-            
-              
-    
-      
-    //- include components/footer.pug
+          .row
+            .article.col-sm-10
+              .flex.jc-sb.ai-center
+                h5 Authority Mag
+                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.75 12.811H12.25V9.31104H14V14.561H0V0.561035H5.25V2.31104H1.75V12.811ZM9.85795 3.04588L7.36969 0.561035H14.0006V7.18988L11.5149 4.70504L7.78533 8.43744L6.12695 6.77688L9.85795 3.04588Z" fill="#2150BA"/>
+                </svg>
+              a.stretched-link(href="https://medium.com/authority-magazine/kickstarters-sydney-anh-mai-kill-your-darlings-you-re-in-service-of-the-product-not-your-ego-e634c7162c4e" target="_blank")
+          
+          .row
+            .col-sm-10
+              hr.clear
+          
+          .row
+            .article.col-sm-10
+              .flex.jc-sb.ai-center
+                h5 DICE INSIGHTS
+                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M1.75 12.811H12.25V9.31104H14V14.561H0V0.561035H5.25V2.31104H1.75V12.811ZM9.85795 3.04588L7.36969 0.561035H14.0006V7.18988L11.5149 4.70504L7.78533 8.43744L6.12695 6.77688L9.85795 3.04588Z" fill="#2150BA"/>
+                </svg>
+              a.stretched-link(href="https://insights.dice.com/2020/10/13/embracing-cultural-design-differences-advice-for-designers/" target="_blank")
+          
+          .row
+            .col-sm-10
+              hr.clear
+
+    //- Social Media
+    include components/social-media.pug

@@ -1,0 +1,121 @@
+html
+  head
+    include components/head.pug
+    title Monthly Recap
+  body
+    //- Mixins
+    include components/bullets.pug
+
+    //- Nav
+    include components/navbar.pug
+    
+    //- Case study header
+    section.case-header.container-wrapper.border-all.no-border-mobile-top
+      .container-fluid.padding-0
+        .row.row-no-gutters
+          .col-sm-6.col-md-6.padding-0.flex.full-height.case-cover.monthly-recap.border-right.border-left
+          .col-sm-5.flex.flex-col.jc-sb.full-height
+            .padding-tb18.svg-text
+              <svg width="522" height="187" viewBox="0 0 522 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.43164 3.07104H13.5106L41.5511 60.3662L69.5053 3.07104H81.5843V83.8365H68.9876V32.0638L44.312 83.9228H38.9628L14.1146 32.0638V83.9228H1.43164V3.07104Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M110.919 80.2987C105.052 76.7609 100.652 71.8424 97.5458 65.4571C94.4397 59.0718 92.8867 51.7374 92.8867 43.4537C92.8867 35.1701 94.4397 27.8356 97.5458 21.4503C100.652 15.065 105.138 10.1466 110.919 6.60878C116.786 3.07097 123.602 1.34521 131.539 1.34521C139.477 1.34521 146.379 3.07097 152.16 6.60878C158.027 10.1466 162.427 15.065 165.533 21.4503C168.639 27.8356 170.106 35.1701 170.106 43.4537C170.106 51.7374 168.553 59.0718 165.533 65.4571C162.427 71.8424 158.027 76.7609 152.16 80.2987C146.293 83.8365 139.477 85.5622 131.539 85.5622C123.602 85.5622 116.7 83.8365 110.919 80.2987ZM149.658 64.9394C153.799 59.6758 155.87 52.5139 155.87 43.4537C155.87 34.3935 153.799 27.3179 149.658 22.0543C145.517 16.877 139.477 14.2021 131.539 14.1158C123.602 14.0295 117.562 16.6182 113.421 21.8817C109.28 27.1453 107.209 34.3072 107.209 43.4537C107.123 52.5139 109.193 59.6758 113.335 64.8531C117.562 70.0304 123.602 72.7053 131.539 72.7916C139.477 72.8779 145.517 70.2893 149.658 64.9394Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M181.322 3.07104H195.041L232.485 59.9348V3.07104H246.204V83.8365H232.485L195.041 26.8865V83.8365H181.322V3.07104Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M281.232 15.7554H255.09V3.07104H320.92V15.7554H294.778V83.8365H281.232V15.7554Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M329.98 3.07104H343.44V37.0685H381.661V3.07104H395.207V83.8365H381.661V49.7528H343.44V83.8365H329.98V3.07104Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M412.031 3.07104H425.491V71.1522H461.124V83.8365H412.031V3.07104Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M479.156 50.7883L451.633 3.07104H467.422L485.972 35.2564L504.521 3.07104H520.31L492.788 50.7883V83.9228H479.069V50.7883H479.156Z" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M47.4178 184.491L33.7858 156.361H14.4594V184.491H1V103.726H34.3897C36.8055 103.726 38.8762 103.898 40.7743 104.157C47.5903 105.193 52.6808 108.04 56.2182 112.613C59.7556 117.187 61.3949 122.968 61.3949 129.957C61.3949 135.566 60.2733 140.484 57.9437 144.626C55.6142 148.854 52.2494 151.874 47.7629 153.859L62.6891 184.491H47.4178ZM14.4594 143.677H33.8721C35.8565 143.677 37.582 143.505 38.9625 143.159C42.0685 142.383 44.3118 140.743 45.6922 138.241C47.0727 135.739 47.8492 132.977 47.8492 129.957C47.8492 126.937 47.1589 124.262 45.6922 121.76C44.3118 119.258 42.0685 117.704 38.9625 116.928C37.582 116.583 35.9428 116.324 33.8721 116.324H14.4594V143.677Z" fill="#2150BA" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M75.0264 103.726H127.139V116.41H88.4858V136.343H120.409V148.941H88.4858V171.807H127.139V184.491H75.0264V103.726Z" fill="#2150BA" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M151.469 180.953C145.602 177.416 141.202 172.497 138.096 166.112C134.99 159.727 133.437 152.392 133.437 144.109C133.437 135.825 134.99 128.49 138.096 122.105C141.202 115.72 145.688 110.801 151.469 107.264C157.336 103.726 164.152 102 172.089 102C181.235 102 188.914 104.243 195.126 108.817C201.338 113.39 205.738 119.689 208.326 127.8L194.78 131.51C193.227 126.161 190.553 122.105 186.67 119.171C182.788 116.237 177.956 114.771 172.089 114.771C164.152 114.771 158.112 117.359 153.885 122.623C149.657 127.886 147.586 134.962 147.586 144.022C147.5 153.082 149.571 160.244 153.798 165.422C158.026 170.685 164.065 173.274 172.003 173.274C177.87 173.274 182.788 171.807 186.584 168.873C190.38 165.939 193.055 161.798 194.694 156.448L208.24 160.244C205.738 168.355 201.338 174.654 195.039 179.228C188.827 183.801 181.148 186.044 172.003 186.044C164.152 186.217 157.249 184.405 151.469 180.953Z" fill="#2150BA" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M269.67 184.491L264.062 166.975H232.225L226.703 184.491H212.812L238.265 103.726H258.109L283.561 184.491H269.67ZM236.194 154.377H260.007L248.014 116.669L236.194 154.377Z" fill="#2150BA" stroke="#2150BA" stroke-miterlimit="10"/>
+                <path d="M327.046 103.726C329.462 103.726 331.532 103.898 333.431 104.157C340.247 105.193 345.337 108.04 348.874 112.613C352.326 117.187 354.051 122.968 354.051 129.957C354.051 136.86 352.326 142.555 348.788 147.215C345.251 151.874 340.16 154.722 333.431 155.844C331.532 156.103 329.462 156.275 327.046 156.275H307.116V184.405H293.656V103.726H327.046ZM331.532 143.159C334.638 142.383 336.882 140.743 338.262 138.241C339.643 135.739 340.419 132.977 340.419 129.957C340.419 126.937 339.729 124.262 338.262 121.76C336.882 119.258 334.638 117.704 331.532 116.928C330.152 116.583 328.513 116.324 326.442 116.324H307.029V143.591H326.442C328.513 143.677 330.238 143.505 331.532 143.159Z" fill="#2150BA" stroke="#2150BA" stroke-miterlimit="10"/>
+              </svg>
+            .padding-bottom18
+              p I led design for Monthly Recap, a reporting feature that shows our marketing partners how their Facebook ads, emails, and Instagram posts perform every month.
+
+    //- Background
+    section.container-wrapper
+      .container-fluid
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-2.col-md-8.col-sm-12.padding-0
+            h3 BACKGROUND
+            p.padding-tb18 What prompts your mind when you think of ad agencies? Beautiful ad campaigns, highly-targeted sponsored content, or perhaps those cute riddles you saw in the subway from a certain mattress company? Traditionally, ad agencies have been really good at producing creatives—yet not so much at updating their clients on how those creatives are doing.
+            p As a tech-supported ad agency, SelfMade builds both internal tools to support its agency operation and client-facing tools to enable clients to upload, revise, and inform themselves on their creatives’ performance. These 2 proprietary platforms, <span class="bold">Piazza</span> (internal) and <span class="bold">Ludlow</span> (client-facing), are what sets us apart from traditional ad agencies.
+            p.padding-top18 Because we post for partners on Instagram, run their ads on Instagram and Facebook, and handle their email marketing, we are able to track how these efforts are doing with standard industry metrics such as CTR, open rate, engagement, etc. Our partners, who are small e-commerce business owners, don’t usually have a good understanding of these metrics and can easily overlook them. It is our job to show them advertising is not just about having beautiful creatives—it is about watching how they perform to make smart decisions as well.
+
+    //- Problem
+    include components/content.pug
+      block content
+        h3 PROBLEM
+        p.padding-tb18 The first version of partner reporting we built was hosted on Looker. It was the easiest way to aggregate performance data from Instagram, Facebook, Klaviyo (the email marketing tool we use), and Google Analytics in one platform. We embedded this in our internal tool Piazza, mostly for Marketing Manager use, and sent month PDF reports to our partners.
+        img(src="assets/img/monthly-recap/looker-overview.png").full
+        p.padding-top18 The data was not friendly. There were few explainers, too many detailed metrics yet no emphasis on which metrics were vital. Most importantly, we <span class="bold">didn’t show our partners which ads, emails, and posts were doing best</span> so they could draw trends from the data. Our partners, who were not so enthusiastic about reading stats to begin with, could not be less interested in these dry PDF reports. We need to find a way to delight partners with results.
+
+    //- Goals
+    include components/content.pug
+      block content
+        h3 GOALS
+        p.padding-tb18 In this iteration of reporting, we want to show partners a quick recap of the creatives we produce for them (posts, emails, ads) and how these creative perform at the end of every month.
+
+    //- MVP
+    include components/content.pug
+      block content
+        h3 MVP
+        p.padding-tb18 A monthly recap page in our partner-facing product, accompanied by a monthly recap email.
+    
+    //- Research
+    include components/content.pug
+      block content
+        h3 RESEARCH
+        h5.padding-tb18 Studied Current Feature
+        p.padding-bottom18 When I first started working on this project, I only had a scarce understanding of the reporting feature and where all this data came from. I also did not know much about marketing metrics nor had I ever designed for data before. Since I’ve never worked on this part of the product, I took some time to familiarize myself with the Reports tab by <span class="bold">studying different partners’ reports</span>. Besides from gaining a deep understanding of each metric’s definition, I was also able to identify some issues with the way we currently handled reporting:
+        +bullets(
+          "To acquire all of this data, we need partners to do a ton of integrations</span> with Facebook, Klaviyo, and Google. I did end up incorporating a few integration flows during onboarding to encourage partners to set them up.",
+          "Some metrics were quite confusing when being presented at the same time. For example, we had 2 revenue metrics, one from Shopify and one from Google Analytics. A big chunk of my scoping this project was actually to weed out unnecessary metrics and show alternative metrics only when we had to</span>. Because GA revenue was an estimate, we decided to only show it when a Shopify revenue wasn’t available."
+        )
+        h5.padding-tb18 Defined "Top Peforming"
+        p I set up some time to talk to 2 of our digital strategy specialists, Hannah and Chell. I wanted to know which data they think would be <span class="bold">beneficial for a partner to know</span> from a monthly recap. I also wanted their help with defining top performing ad and email since we want to show these in the feature.
+        p.padding-tb18 FB ads were especially complicated to compare against one another because one could set a different goal for each ad set, thus vary the results. We ended up having different “winners” for different goals. I also learned by talking to them that we only launched 2-3 campaigns for both email and ad per month, plus they all start at different times. This largely helped determine the frequency of this new report feature. Special thanks to Hannah & Chell!
+        img(src="assets/img/monthly-recap/fb-campaign-goals.png").full
+        img.padding-top18(src="assets/img/monthly-recap/klaviyo.png").full
+    
+    //- Design
+    include components/content.pug
+      block content
+        h3 Design
+        h5.padding-tb18 UI Experiments  
+        p I worked with a couple of different UI layouts and card designs for this feature and user-tested them with other team members. In the first iteration of wireframes, I didn’t take into consideration fluctuation tickers, which was a major flaw that was pointed out in our first design reviews. Without tickers, users won't have be able to compare performance results this month with last month's. Thank you, team!
+        img.padding-tb18(src="assets/img/monthly-recap/wireframes.png").full
+        h5 Strategic Use of Colors
+        p.padding-tb18 On a UI where you’re displaying stats and fluctuations, colors have to be used strategically. Originally, I want the revenue stat to be green (original, haha), but when you’ve used green as an indicator for "increase", it can get pretty confusing. I also used orange to signify "top performing", but having red, green, and orange produced too much of visual noise, plus there would be a lot of colorful photography on the page from the all the creatives.
+        img(src="assets/img/monthly-recap/ui-experiments.png").full
+        img.padding-tb18(src="assets/img/monthly-recap/stat-card-ui.png").full
+        h5 Final Delivery
+        img.padding-tb18(src="assets/img/monthly-recap/ad.png").full
+        img(src="assets/img/selfmade/monthly-recap-ig.png").full
+        img.padding-tb18(src="assets/img/monthly-recap/email-full.png").full
+        img(src="assets/img/monthly-recap/email.png").full
+        div.padding-tb18.vid.full
+          video(loop="" autoplay="")
+            source(src="assets/img/monthly-recap/scroll.mp4" type="video/mp4")
+            Your browser does not support the video tag.
+        //- div.vid.full
+        //-   video(loop="" autoplay="")
+        //-     source(src="assets/img/monthly-recap/hover.mp4" type="video/mp4")
+        //-     Your browser does not support the video tag.
+        p.padding-tb18 Although it was not an immediate part of this project, I did design a few integration flows that help partners set up the tools that were necessary for us to do monthly reporting for them (Google Analytics, Facebook Ads Manager, etc.). All of these setups and integrations happen inside the SelfMade web app and provide the backend infrastucture needed for me to design UI above.
+        img(src="assets/img/monthly-recap/set-up-email.png").full
+        img.padding-tb18(src="assets/img/monthly-recap/set-up-ga.png").full
+            
+    //- Takeway
+    include components/content.pug
+      block content
+        h3 Takeaway
+        p.padding-tb18 Product design is adaptive. It is being able to deepdive into fields you have zero expertise in, pick up knowledge on the go, identify and prioritize problems with confidence. All of this wouldn't be possible without a willingness to investigate and learn.
+            
+    //- Footer
+    include components/footer.pug
+
+    //- Social Media
+    include components/social-media.pug
+
