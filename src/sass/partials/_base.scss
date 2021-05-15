@@ -1,4 +1,4 @@
-// BIG fonts
+// Big fonts
 h1, h2, h3, h4, h5, p, li, button, span, a {
   margin: 0
 }
@@ -19,7 +19,7 @@ h3 {
   text-transform: uppercase;
 }
 
-// SMALL fonts
+// Small fonts
 h5, p, ul, ol, li, button, span, a {
   font-family: 'Manrope Regular', Helvetica, sans-serif;
   word-spacing: .05rem;
@@ -49,7 +49,6 @@ a {
   &-right {text-align: right;}
 }
 
-
 // button
 button {
   background: none;
@@ -68,8 +67,6 @@ button {
 hr {
   border-top: 1px solid $china-blue
 }
-
-
 
 // video
 .vid {
@@ -91,6 +88,7 @@ ul {
 // hardbreak
 span.hardbreak {display: block;}
 
+// pull quote 
 .blockquote {
   &::before{
     content: "\201C";
@@ -103,7 +101,7 @@ span.hardbreak {display: block;}
   }
 }
 
-//flex
+//flexbox
 .flex {
   display: flex;
   flex-direction: row;
@@ -133,6 +131,15 @@ img.full {
 }
 .svg-text svg {width: 100%; height: auto;}
 
+// img drop shadow
+.drop-shadow {
+  filter: drop-shadow(0px 14px 33px rgba(127, 135, 144, 0.18));
+  -webkit-filter: drop-shadow(0px 14px 33px rgba(127, 135, 144, 0.18));
+  -moz-filter: drop-shadow(0px 14px 33px rgba(127, 135, 144, 0.18));
+  -ms-filter: drop-shadow(0px 14px 33px rgba(127, 135, 144, 0.18));
+  -o-filter: drop-shadow(0px 14px 33px rgba(127, 135, 144, 0.18));
+}
+
 // clear float
 .clear {clear:both}
 
@@ -154,6 +161,7 @@ ul.bullets {
   }
 }
 
+//media queries
 .desk-only {
   @media (min-width: $screen-tablet + 1) {
     visibility: visible;
@@ -162,7 +170,6 @@ ul.bullets {
     display: none !important;
   };
 }
-
 .mobile-only {
   @media (min-width: $screen-tablet+ 1) {
     display: none !important;
