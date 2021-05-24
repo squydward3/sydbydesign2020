@@ -3,30 +3,27 @@ nav.desk-only {
   top: 0;
   left: 0;
   height: 100vh;
+  z-index: 1;
   li {
     height: calc((100%-70px)/2);
     width: 70px;
-    background-color: $white;
     transition: background-color 0.4s ease-in-out;
     h5 {
       transform: rotateZ(-90deg);
-      &:after {
-        content: '';
-        width: 100%;
-        height: 3px;
-        background-color: $china-blue;
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        opacity: 0;
-        transition: all 0.3s ease;
-      }
-    }
-    &:hover {
-      h5:after {opacity: 1;}
+      @include underline-from-center();
     }
     &.home{
       height:70px;
+      &:hover {
+        svg.protractor {
+          transform: rotate(45deg);
+          fill: $hot-pink;
+          -webkit-transition: all 0.05s ease-out;
+          -moz-transition: all 0.05s ease-out;
+          -o-transition: all 0.05s ease-out;
+          transition: all 0.05s ease-out;
+        }      
+      }
     }
   }
   @include break($screen-tablet) {
@@ -34,23 +31,19 @@ nav.desk-only {
   }
 }
 nav.mobile-only {
-  // position:fixed;
-  // top: 0;
-  // left: 0;
   width: 100%;
+  z-index: 1;
   .nav-item {
     position: relative;
-    // width: calc((100%-70px)/2);
     width: 33.3%;
     height: 60px;
-    background-color: $white;
     h5{
       position: relative;
       &:after{
         content: '';
         width: 100%;
         height: 3px;
-        background-color: $china-blue;
+        background-color: $hot-pink;
         position: absolute;
         bottom: 0px;
         left: 0px;
@@ -61,7 +54,6 @@ nav.mobile-only {
     &:active {
       h5:after {opacity: 1;}
     }
-    // &.home{width:70px;}
   }
 }
 .fixed {

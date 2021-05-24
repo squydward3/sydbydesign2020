@@ -1,0 +1,17 @@
+section.contact{
+    position: relative;
+    height: 70vh;
+    .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: -webkit-fill-available;
+        width: -moz-fill-available;
+        width: -ms-fill-available;
+        width: -o-fill-available;          
+    }
+    @include break($screen-tabletXL) {
+        height: auto;
+        .content { position: inherit; width: auto;}
+    }
+}

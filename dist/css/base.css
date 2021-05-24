@@ -25,7 +25,7 @@ body {
 
 main a.menu__item-link, main .marquee span {
 	font-family: 'Manrope Bold', Helvetica, sans-serif;
-	color: #2150BA;
+	color: #D80867;
 }
 /* main::before {
 	animation: grain 8s steps(10) infinite;
@@ -102,7 +102,7 @@ a:focus {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	padding: 5vh 0 25vh;
+	padding: 5vh 0;
 	--marquee-width: 100%;
 	--offset: 20vw;
 	--move-initial: calc(-25% + var(--offset));
@@ -125,8 +125,8 @@ a:focus {
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
-	-webkit-text-stroke: 1.5px #2150BA;
-	text-stroke: 1.5px #2150BA;
+	-webkit-text-stroke: 1.5px #D80867;
+	text-stroke: 1.5px #D80867;
 	-webkit-text-fill-color: transparent;
 	text-fill-color: transparent;
 	color: transparent;
@@ -134,8 +134,8 @@ a:focus {
 }
 @media (max-width: 414px) {
 	.menu__item-link {
-		-webkit-text-stroke: 1px #2150BA;
-		text-stroke: 1px #2150BA;
+		-webkit-text-stroke: 1px #D80867;
+		text-stroke: 1px #D80867;
 	}
 }
 
@@ -152,6 +152,7 @@ a:focus {
 	bottom: 60%;
 	left: 0;
 	pointer-events: none;
+	color:#D80867;
 }
 
 .menu__item-link:hover {
@@ -168,6 +169,7 @@ a:focus {
 	left: 100%;
 	top: 50%;
 	transform: translate3d(calc(-100% - 6vw),-30%,0) translate3d(0,20px,0);
+	z-index: 1;
 }
 
 .menu__item-link:hover + .menu__item-img {

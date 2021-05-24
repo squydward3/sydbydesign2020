@@ -1,97 +1,26 @@
 .hero {
   height: 90vh;
-  @include break($screen-tablet) {
+  @include break($screen-tabletXL) {
     height: auto;
   }  
 }
-
 // Project sections
 .project {
   .name, .info {
     padding: 1.4rem;
-    @media (min-width: $screen-desktop) and (max-width: $screen-desktop-lg) {
+    @media (min-width: $screen-tabletXL) and (max-width: $screen-desktop) {
       padding: 1.125rem;
-    }  
-  }
-  .name {
-    @media (min-width: $screen-tablet) {
-      @include border(right);
     }
-    h2 {padding-bottom: 12px;}
-    &:hover {
-      background-color: $china-blue;
-      h2, h3, p, svg {color: $white; fill: $white}
-    }  
+  }
+  &:hover,
+	&:focus,
+	&:active {
+    .arrow {
+      @include wobble-to-top-right();
+    }
   }
 }
 .project-hero {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-// Project Blurbs
-.blurb {
-  padding: 18px;
-  background-color: $black;
-  width: 224px;
-  border-radius: 2px;
-  position: absolute;
-  @include break($screen-tablet) {
-    top: 24px
-  }
-  p { color: $white; }
-  #monthly-recap &{
-    left: 200px;
-    bottom: -56px;
-    @include break($screen-tablet) {
-      position: relative;
-      left: 0;
-      bottom: 0;
-    }
-  }
-  #group-collabs &{
-    left: 200px;
-    bottom: -56px;
-    @include break($screen-tablet) {
-      position: relative;
-      left: 0;
-      bottom: 0;
-    }
-  }
-  #connected-orgs &{
-    left: 200px;
-    bottom: -56px;
-    @include break($screen-tablet) {
-      position: relative;
-      left: 0;
-      bottom: 0;
-    }
-  }
-  #export-builder &{
-    right: 0;
-    bottom: -100px;
-    @include break($screen-tablet) {
-      position: relative;
-      right: 0;
-      bottom: 0;
-    }
-  }
-  #policy-redesign &{
-    right: 0;
-    bottom: -80px;
-    @include break($screen-tablet) {
-      position: relative;
-      right: 0;
-      bottom: 0;
-    }
-  }
-  #agency &{
-    left: 300px;
-    top: 50%;
-    @include break($screen-tablet) {
-      position: relative;
-      left: 0;
-      top: 0;
-    }
-  }
 }

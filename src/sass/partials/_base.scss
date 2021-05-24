@@ -1,3 +1,5 @@
+//Background color
+.background-color-mermaid {background-color: $mermaid;}
 // Big fonts
 h1, h2, h3, h4, h5, p, li, button, span, a {
   margin: 0
@@ -5,20 +7,18 @@ h1, h2, h3, h4, h5, p, li, button, span, a {
 h1 {
   font-family: 'Manrope Extrabold', Helvetica, sans-serif;
   font-size: 4.5rem;
-  color: $china-blue;
+  color: $hot-pink;
 }
 h2 {
-  font-family: 'Manrope Extrabold', Helvetica, sans-serif;
+  font-family: 'Manrope Bold', Helvetica, sans-serif;
   font-size: 4rem;
-  color: $china-blue;
+  color: $hot-pink;
 }
 h3 {
-  font-family: 'Manrope Extrabold', Helvetica, sans-serif;
+  font-family: 'Manrope Regular', Helvetica, sans-serif;
   font-size: 2rem;
-  color: $china-blue;
-  text-transform: uppercase;
+  color: $hot-pink;
 }
-
 // Small fonts
 h5, p, ul, ol, li, button, span, a {
   font-family: 'Manrope Regular', Helvetica, sans-serif;
@@ -27,47 +27,51 @@ h5, p, ul, ol, li, button, span, a {
   line-height: 1.875rem;
 }
 h5, button {
-  color: $china-blue;
+  color: $hot-pink;
   font-family: 'Manrope Bold', Helvetica, sans-serif;
 }
 h5 {text-transform: uppercase;}
-
-// bold
+p {color: $black}
+// ---------------------------TEXT STYLES MISC---------------------------
+// Bold text
 span.bold {
   font-family: 'Manrope Bold', Helvetica, sans-serif;
 }
-
-// link
-a {
-  text-decoration: none;
-  color: $china-blue;
-  &:visited {color: $china-blue;}
-  // &:hover {color: $china-blue; text-decoration: underline;}
+// Text colors
+.text-pink {color: $hot-pink}
+// Text link
+.text-link {text-decoration: underline;}
+// Line break
+h2 > span.line-break {
+  font-size: 4rem;
+  line-height: inherit;
+  @include break($screen-mobileXL) {
+    display: block
+  };
 }
-
-.text-align {
-  &-right {text-align: right;}
-}
-
-// button
+// Button
 button {
   background: none;
-  border: 1px solid $china-blue;
+  border: 1px solid $hot-pink;
   padding: 14px 24px;
   border-radius: 1px;
   outline: none;
   &:hover {
-    background-color: $china-blue;
+    background-color: $hot-pink;
     color: $white;
     cursor: pointer
   }
 }
-
+// lists
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0
+}
 //hr
 hr {
-  border-top: 1px solid $china-blue
+  border-top: 1px solid $hot-pink
 }
-
 // video
 .vid {
   margin-top: 32px;
@@ -77,17 +81,6 @@ hr {
     height: auto;
   }
 }
-
-// lists
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0
-}
-
-// hardbreak
-span.hardbreak {display: block;}
-
 // pull quote 
 .blockquote {
   &::before{
@@ -100,7 +93,7 @@ span.hardbreak {display: block;}
     content: "\201D";
   }
 }
-
+// ---------------------------FLEX & ALIGNMENT---------------------------
 //flexbox
 .flex {
   display: flex;
@@ -116,21 +109,22 @@ span.hardbreak {display: block;}
 .ai {
   &-baseline {align-items: baseline;}
   &-center {align-items: center;}
+  &-bottom {align-items: flex-end;}
 }
-
+.text-align {
+  &-right {text-align: right;}
+}
 //make col- full height
 .full-height {
-  @media (min-width: $screen-tablet + 1) {
+  @media (min-width: $screen-tabletXL + 1) {
     height: 100%;
   }
 }
-
 // make img stretch
 img.full {
   width: 100%
 }
 .svg-text svg {width: 100%; height: auto;}
-
 // img drop shadow
 .drop-shadow {
   filter: drop-shadow(0px 14px 33px rgba(127, 135, 144, 0.18));
@@ -139,10 +133,8 @@ img.full {
   -ms-filter: drop-shadow(0px 14px 33px rgba(127, 135, 144, 0.18));
   -o-filter: drop-shadow(0px 14px 33px rgba(127, 135, 144, 0.18));
 }
-
 // clear float
 .clear {clear:both}
-
 // bullets
 ul.bullets {
   li {
@@ -160,8 +152,8 @@ ul.bullets {
     }
   }
 }
-
-//media queries
+// ---------------------------MEDIA QUERIES---------------------------
+// Show only > $screen-tablet: 768px
 .desk-only {
   @media (min-width: $screen-tablet + 1) {
     visibility: visible;
@@ -170,6 +162,7 @@ ul.bullets {
     display: none !important;
   };
 }
+// Show only < $screen-tablet: 768px
 .mobile-only {
   @media (min-width: $screen-tablet+ 1) {
     display: none !important;

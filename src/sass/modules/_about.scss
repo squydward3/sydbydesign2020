@@ -1,16 +1,10 @@
 #about {
-  height: 90vh;
-  min-height: 700px;
-  @include break($screen-desktop) {
-    height: auto;
+  @include break($screen-tabletXL) {
     .portrait {border-right: 0;}
   };
 }
-
 #experience {
   .article:hover {
-    background-color: $china-blue;
-    h5 {color: $white};
-    svg > path {fill: $white}  
+    background-color: $mermaid;
   }
 }
