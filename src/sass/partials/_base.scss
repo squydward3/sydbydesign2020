@@ -1,5 +1,6 @@
 //Background color
 .background-color-mermaid {background-color: $mermaid;}
+// ---------------------------MAIN TEXT STYLES---------------------------
 // Big fonts
 h1, h2, h3, h4, h5, p, li, button, span, a {
   margin: 0
@@ -8,6 +9,7 @@ h1 {
   font-family: 'Manrope Extrabold', Helvetica, sans-serif;
   font-size: 4.5rem;
   color: $hot-pink;
+  line-height: 100%;
 }
 h2 {
   font-family: 'Manrope Bold', Helvetica, sans-serif;
@@ -20,7 +22,7 @@ h3 {
   color: $hot-pink;
 }
 // Small fonts
-h5, p, ul, ol, li, button, span, a {
+h5, p, ul, ol, li, button, a {
   font-family: 'Manrope Regular', Helvetica, sans-serif;
   word-spacing: .05rem;
   font-size: 1.125rem;
@@ -34,21 +36,43 @@ h5 {text-transform: uppercase;}
 p {color: $black}
 // ---------------------------TEXT STYLES MISC---------------------------
 // Bold text
-span.bold {
-  font-family: 'Manrope Bold', Helvetica, sans-serif;
-}
+span.bold {font-family: 'Manrope Bold', Helvetica, sans-serif;}
 // Text colors
 .text-pink {color: $hot-pink}
+//Statement H1
+h1.statement-text {
+  font-size: 13vw;
+  white-space: nowrap;
+  -webkit-text-stroke: 1px $hot-pink;
+  -moz-text-stroke:1px $hot-pink;
+  -o-text-stroke:1px $hot-pink;
+  -ms-text-stroke:1px $hot-pink;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  span.statement-text-with-fill {
+    font-family: 'Manrope Extrabold', Helvetica, sans-serif;
+    -webkit-text-fill-color: $hot-pink;
+    -moz-text-fill-color: $hot-pink;
+    -o-text-fill-color: $hot-pink;
+    -ms-text-fill-color: $hot-pink;  
+  }
+  @include break($screen-tablet) {
+    white-space:inherit;
+    font-size: 23.2vw;
+  };
+}
 // Text link
 .text-link {text-decoration: underline;}
 // Line break
-h2 > span.line-break {
-  font-size: 4rem;
+span.line-break {
   line-height: inherit;
-  @include break($screen-mobileXL) {
+  @include break($screen-tablet) {
     display: block
   };
 }
+// ---------------------------HTML MISC---------------------------
 // Button
 button {
   background: none;
@@ -98,8 +122,10 @@ hr {
 .flex {
   display: flex;
   flex-direction: row;
-  // flex-wrap: nowrap;
   &-col {flex-direction: column;}
+}
+.flex-mobile {
+  @include break($screen-mobileXL) {flex-direction: column};
 }
 .jc {
   &-center {justify-content: center;}
