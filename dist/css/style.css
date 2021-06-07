@@ -812,8 +812,13 @@ h5 {
 p {
   color: #28292B; }
 
-span.bold {
+span.bold, p.bold {
   font-family: 'Manrope Bold', Helvetica, sans-serif; }
+
+p.caption {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #757575; }
 
 .text-pink {
   color: #D80867; }
@@ -1086,6 +1091,10 @@ section.split-header {
       height: 300px; } }
   section.split-header .add-on {
     background: url("/assets/img/kickstarter/add-on-main-img.png") no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  section.split-header .signals {
+    background: url("/assets/img/kickstarter/signals-main-img.png") no-repeat;
     background-size: cover;
     background-position: center center; }
   section.split-header .monthly-recap {

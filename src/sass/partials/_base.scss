@@ -36,7 +36,13 @@ h5 {text-transform: uppercase;}
 p {color: $black}
 // ---------------------------TEXT STYLES MISC---------------------------
 // Bold text
-span.bold {font-family: 'Manrope Bold', Helvetica, sans-serif;}
+span.bold, p.bold {font-family: 'Manrope Bold', Helvetica, sans-serif;}
+// Caption
+p.caption {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: $gray
+}
 // Text colors
 .text-pink {color: $hot-pink}
 //Statement H1
