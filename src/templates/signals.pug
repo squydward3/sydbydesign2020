@@ -256,6 +256,41 @@ html
             img(src="assets/img/kickstarter/signals-mvp-backed-projects-page.png").full.drop-shadow
             img.padding-top30(src="assets/img/kickstarter/signals-mvp-view-pledge-modal.png").full.drop-shadow
             p.caption.padding-top18 Backers will be able to see their reward fulfillment status on the Backed Projects page and the View Pledge modal.
+    //- Retro
+    section.container-wrapper.margin-top48.border-top
+      .container-fluid
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-1.col-md-10.col-sm-12
+            h3 Retro: Liked, lacked, learned
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-1.col-md-2.col-sm-12.padding-bottom18-mobile
+            h5 LIKED  
+          .col-md-8.col-sm-12
+            +bullets(
+              "Leading an important, taxing initiative for Kickstarter",
+              "Dabbling as a PM, scoped out solutions and modeled effectiveness. I’ve always love spreadsheets :)",
+              "Looker!",
+              "Collaboration with UX Research on concept testing",
+              "Putting my frontend skills to good use and built out a couple of Optimizely experiments"
+            )
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-1.col-md-2.col-sm-12.padding-bottom18-mobile
+            h5 LACKED 
+          .col-md-8.col-sm-12
+            +bullets(
+              "Stakeholder alignment on what qualified as fulfillment signals",
+              "A dedicated PM partner in the early stage of this project",
+              "A more adventurous spirit during early explorations"
+            )
+        .row.row-no-gutters.padding-tb30
+          .col-md-offset-1.col-md-2.col-sm-12.padding-bottom18-mobile
+            h5 LEARNED
+          .col-md-8.col-sm-12
+            +bullets(
+              "Build relationship with stakeholders early on, catch up 1on1, and get alignment on product decisions",
+              "How to design and get buy-in for low-lift frontend experiments to validate my assumptions",
+              "Leading is hard, but it gets better with practice, just like any skills :)"
+            )
     //- Footer
     include components/footer.pug
     //- Contact

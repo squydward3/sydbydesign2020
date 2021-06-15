@@ -937,7 +937,7 @@ img.full {
   clear: both; }
 
 ul.bullets li:not(:last-child) {
-  margin-bottom: 12px; }
+  margin-bottom: 6px; }
 ul.bullets li span.count {
   padding-right: 8px;
   font-family: 'Manrope Regular', Helvetica, sans-serif; }
@@ -969,6 +969,11 @@ nav.desk-only {
   height: 100vh;
   z-index: 1; }
   nav.desk-only li {
+    height: 47%;
+    height: -moz-calc((100%-70px)/2);
+    height: -webkit-calc((100%-70px)/2);
+    height: -o-calc((100%-70px)/2);
+    height: -moz-calc((100%-70px)/2);
     height: calc((100%-70px)/2);
     width: 70px;
     transition: background-color 0.4s ease-in-out; }
@@ -1094,7 +1099,7 @@ section.split-header {
     background-size: cover;
     background-position: center center; }
   section.split-header .signals {
-    background: url("/assets/img/kickstarter/signals-main-img.png") no-repeat;
+    background: url("../assets/img/kickstarter/signals-main-img.png") no-repeat;
     background-size: cover;
     background-position: center center; }
   section.split-header .monthly-recap {
