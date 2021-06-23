@@ -78,13 +78,13 @@ html
             p.padding-top18 From Jan to Aug 2020, fulfillment-related tickets made up 22% of all Zendesk support tickets—the highest of all support categories. A look at the comment hot words such as “refund”, “scam”, “fraud”, etc. suggests an escalated wave of negative fulfillment-related sentiment in the past 10 years. In physical-reward categories such as Design & Tech and Food, backer sentiment score deteriorates as rewards fail to be delivered on time, or for that matter, fulfilled at all.
           .col-md-5.col-sm-12
             p In order to address larger fulfillment workflow issues, first, we need to gain scalable, systematic signals into fulfillment and backer sentiment. Having reliable fulfillment signals will enable us to invest in the right solution to our flawed workflow, be it building our own label/postage product or even just restricting creators’ risky promises early on.
-        .row.row-no-gutters.padding-top30
+        .row.row-no-gutters.padding-top64
           .col-md-offset-2.col-md-8.col-sm-12
-            img(src="assets/img/kickstarter/signals-pulse-by-month.png").full
+            img(src="assets/img/kickstarter/signals-pulse-by-month.png").full.drop-shadow
             p.caption.padding-top18 The further a project is from its expected delivery date, the more backer sentiment score deteriorates
         .row.row-no-gutters.padding-top30
           .col-md-offset-2.col-md-8.col-sm-12
-            img(src="assets/img/kickstarter/signals-tidal-waves.png").full
+            img(src="assets/img/kickstarter/signals-tidal-waves.png").full.drop-shadow
             p.caption.padding-top18 The "tidal wave" of negative fulfillment-related comment
     //- SECT: Project Conclusion Signals
     section.container-wrapper.margin-top48.border-top
@@ -101,12 +101,12 @@ html
             p KR1: #[span(class="bold") Fulfillment signal coverage] of at least 75% of all successful pledges, moving forward
           .col-md-5.col-sm-12
             p KR 2: #[span(class="bold") Backer satisfaction score coverage] of at least 5% for fulfilled and unfulfilled
-    //- SECT: Our current signals were way off
+    //- SECT: Current fulfillment signals were low
     section.container-wrapper.margin-top48.border-top
       .container-fluid
         .row.row-no-gutters.padding-top30
           .col-md-offset-1.col-md-10.col-sm-12
-            h3 Our current signals were way off
+            h3 Current fulfillment signals were low
         .row.row-no-gutters.padding-top30
           .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
             p Currently, our set of signal tooling was weak. On-platform got-it tools give us #[span(class="bold") 16%] from backers, while send-it tools give us a meager #[span(class="bold") 8%] from creators. 
@@ -114,11 +114,61 @@ html
             p There’re a couple of reasons why we’re not getting the coverage we want:
         .row.row-no-gutters.padding-top30
           .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
+            h5 1.
             p.bold Backers have to come to us for feedback; we’re not coming to them
             p Because of a lack of mobile-first approach and ineffective placement of the Pulse bar, we’re not engaging backers for Pulse feedback in the right place, at the right time.
           .col-md-5.col-sm-12
-            p.bold Backers have to come to us for feedback; we’re not coming to them
+            h5 2.
+            p.bold Creators aren’t incentivized to give us signals
             p Our current send-it tool is utterly manual. Many creators would rather use a spreadsheet to fulfill. On top of that, with robust third-party fulfillment tools like Backerkit and Shipstation, creators just aren’t incentivized to come back to our platform after they’ve received their money.
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-2.col-md-8.col-sm-12
+            img(src="assets/img/kickstarter/signals-current-backed-project-page.png").full
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-2.col-md-8.col-sm-12
+            img(src="assets/img/kickstarter/signals-current-native-gotit-flow.png").full
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-2.col-md-8.col-sm-12
+            img(src="assets/img/kickstarter/signals-got-it-channel-breakdown.png").full
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-2.col-md-8.col-sm-12
+            img(src="assets/img/kickstarter/signals-current-backer-report.png").full
+    
+    //- SECT: Fixed goal + small team = variable scope
+    section.container-wrapper.margin-top48.border-top
+      .container-fluid
+        //- 1
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-1.col-md-10.col-sm-12
+            h3 Fixed goal + small team = variable scope
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
+            p Despite the importance and urgency of this project, it was assigned to my team, Creator Tools, in our most unfortunate state: our PM had just left, so did 2 engineers.  
+          .col-md-5.col-sm-12
+            p Working with a fixed business goal, as OKR lead, I had to be scrappy and flexible. In the next few months, I took on the role of a #[span(class="bold") design lead], #[span(class="bold") PM], and even #[span(class="bold") dabbled in some coding].
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-2.col-md-8.col-sm-12
+            img(src="assets/img/kickstarter/signals-timeline.png").full
+        //- 2
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
+            p I led various brainstorming sessions with stakeholders, including the Director of Risks, VP of Insights, Director of Design, and Group Product Manager.  
+          .col-md-5.col-sm-12
+            p  We were able to outline 3 areas we’d like to tackle and potential features to experiment with:
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-2.col-md-8.col-sm-12
+            img(src="assets/img/kickstarter/signals-product-brief.png").full
+        //- 3
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
+            p Having only worked in small startups previously, I’ve fortunately picked up some PM skills. Perhaps the most useful one among them is Looker, a business intelligence tool.  
+          .col-md-5.col-sm-12
+            p  I was able to run queries and model out signal coverage for each out our proposed solutions
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-2.col-md-8.col-sm-12
+            img(src="assets/img/kickstarter/signals-model.png").full
+            p.caption.padding-top18 Using existing proxy signals, I was able to model out how much coverage each potential approach would give us.
+    
     //- SECT: A generative design approach
     section.container-wrapper.margin-top48.border-top
       .container-fluid
@@ -128,86 +178,123 @@ html
         .row.row-no-gutters.padding-top30
           .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
             p In the early months of this project, I really struggled to be generative with my design. It took me some time to shed off the restrictive, business-oriented thinking patterns that came with wearing an acting PM hat. Once I learned to let loose, I was able to be much more generative with my design.
-        //- Concept: Backed Projects Carousel
+        
+        //- Concept 1: Backed Projects Carousel
         .row.row-no-gutters.padding-top30
           .col-md-offset-1.col-md-5.col-sm-12
             h5 BACKER SIGNALS
         .row.row-no-gutters.padding-top18
           .col-md-offset-1.col-md-5.col-sm-12
             p An idea I wanted to experiment with was a Backed Project Carousel. Currently, the Backed Projects Page where backers go to manage their pledges, mark as received, give feedback, etc. is quite buried, especially on mobile web.
-            p.padding-top18.padding-bottom18-mobile By giving major real estate on the homepage to the carousel, I hoped to increase backers’ interaction with their past projects. 
+            p.padding-top18.padding-bottom18-mobile By giving major real estate on the homepage to the carousel, I hoped to #[span(class="bold") increase backers’ interaction with their past projects]. 
           .col-md-offset-1.col-md-3.col-sm-12
             img(src="assets/img/kickstarter/signals-proto-header-mobile.gif").full.drop-shadow
-        .row.row-no-gutters.padding-top30
+        .row.row-no-gutters.padding-top18
           .col-md-offset-2.col-md-8.col-sm-12
             img(src="assets/img/kickstarter/signals-concept-header.png").full.drop-shadow
-            p.caption.padding-top18 Backed Projects Carousel on desktop
-        //- Concept: Nav
-        .row.row-no-gutters.padding-top30
+            p.caption.padding-top18 Concept 1: Backed Projects Carousel
+        
+        //- Concept 2: Capture signals in the global top nav
+        .row.row-no-gutters.padding-top64
+          .col-md-offset-1.col-md-5.col-sm-12
+            p Another idea I had was a compact Got-it/Sentiment combo in the top nav, which had about #[span(class="bold") 100k+] unique clicks per day.
+        .row.row-no-gutters.padding-top18
           .col-md-offset-2.col-md-8.col-sm-12
             img(src="assets/img/kickstarter/signals-concept-nav.png").full.drop-shadow
-            p.caption.padding-top18 Another idea I had was a compact Got-it/Sentiment combo in the top nav. The top nav had about ... unique clicks per day.
-        //- Concept: Email
-        .row.row-no-gutters.padding-top30
-          .col-md-offset-1.col-md-3.col-sm-12.padding-bottom18-mobile
-            img(src="assets/img/kickstarter/signals-concept-email.png").full.drop-shadow
+            p.caption.padding-top18 Concept 2: Capture signals in the global top nav 
+        
+        //- Concept 3: Email
+        .row.row-no-gutters.padding-top64
           .col-md-offset-1.col-md-5.col-sm-12
-            p One of our best bets was a “Did you receive X?” backer email. Traditionally, Kickstarter’s mailer has performed well. This was expected to bring in ... backers.
+            p One of our best bets was a “Did you receive X?” backer email. Traditionally, Kickstarter’s mailer has performed well.
+          .col-md-offset-1.col-md-3.col-sm-12
+            img(src="assets/img/kickstarter/signals-concept-email.png").full.drop-shadow
+            p.caption.padding-top18 Concept 3: Got-it email
+        
         //- Concept: Different messaging levels
-        .row.row-no-gutters.padding-top30
+        .row.row-no-gutters.padding-top64
           .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
             p I also wanted to experiment with different messaging levels and how they alter backer sentiments. What’s the difference between a standard “thank you” message versus a “we’ll disqualify this creator”? How does that alter backers’ perception of our platform?
           .col-md-5.col-sm-12
             p I plan to follow up with each  backer cohort with a Qualtrics survey to measure the effectiveness of these different messaging levels.
-        .row.row-no-gutters.padding-top30
+        .row.row-no-gutters.padding-top18
           .col-md-offset-1.col-md-10.col-sm-12
             img(src="assets/img/kickstarter/signals-backer-messaging-level.png").full.drop-shadow
-            p.caption.padding-top18 Different backer messaging levels
+            p.caption.padding-top18 Concept 4: Different backer messaging levels
+        
         //- Optimizely
-        .row.row-no-gutters.padding-top30
+        .row.row-no-gutters.padding-top64
           .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
-            p While we did some concept testing on the backer side, the only way to measure the effectiveness of these approaches was through experimentation.
+            p While we did some concept testing on the backer side, the only way to measure the effectiveness of these approaches was through #[span(class="bold") experimentation].
           .col-md-5.col-sm-12
             p I got to put my frontend skills to use a little bit and built several simple experiments on Optimizely.
-        .row.row-no-gutters.padding-top30
+        .row.row-no-gutters.padding-top18
           .col-md-offset-2.col-md-8.col-sm-12
             img(src="assets/img/kickstarter/signals-optimizely.png").full.drop-shadow
             p.caption.padding-top18 An Optimizely experiment I built
+        
+
         //- Creator signals
         .row.row-no-gutters.padding-top64
           .col-md-offset-1.col-md-5.col-sm-12
             h5 CREATOR SIGNALS
+        
         //- Concept: Status 2.0
         .row.row-no-gutters.padding-top18
           .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
-            p Capturing signals on the creators side was tricky. Many of our creators abandon the platform after receiving their funds (which we give in full sum). In addition, Kickstarter’s neglection of post-campaign creator functionalities over the past decade has given rise to a suite of 3rd party fulfillment products that cater specifically to crowdfunded campaigns—we call these “pledge managers.”
+            p Capturing signals on the creators side was tricky. #[span(class="bold") Many of our creators abandon the platform] after receiving their funds (which we give in full sum). In addition, Kickstarter’s neglection of post-campaign creator functionalities over the past decade has given rise to a suite of #[span(class="bold") 3rd party fulfillment products] that cater specifically to crowdfunding campaigns — we call these “pledge managers.”
           .col-md-5.col-sm-12.padding-bottom18-mobile
-            p One of the earliest concepts I developed was a Tweet-like creator status module that collects fulfillment stage data.
-        .row.row-no-gutters.padding-top30
+            p One of the earliest concepts I developed was a Tweet-like status module that collects fulfillment stage data from creators.
+        .row.row-no-gutters.padding-top18
           .col-md-offset-2.col-md-8.col-sm-12
             img(src="assets/img/kickstarter/signals-proto-status-2.0.gif").full.drop-shadow
-            p.caption.padding-top18 Concept: Creator status
+            p.caption.padding-top18 Concept 1: Creator status bar
             p.caption Creators can quickly post a status on top of their funded project page to update backers on their fulfillment progress
+        
         //- Concept: Report card
-        .row.row-no-gutters.padding-top18
+        .row.row-no-gutters.padding-top64
           .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
-            p I also toyed with the idea of a “report card” concept: using some high-level fulfillment metrics such as percentage of rewards sent, number of backers waiting, peer creators’ got-it rate, etc. to create a platform-wide high standard for fulfillment rate reporting.
-        .row.row-no-gutters.padding-top30
+            p I also toyed with the idea of a “report card” concept: using some high-level fulfillment metrics such as percentage of rewards sent, number of backers waiting, peer creators’ got-it rate, etc. to create platform-wide #[span(class="bold") high standards] for fulfillment rate reporting.
+        .row.row-no-gutters.padding-top18
           .col-md-offset-2.col-md-8.col-sm-12
             img(src="assets/img/kickstarter/signals-concept-report-card-good.png").full.drop-shadow
             img.padding-top18(src="assets/img/kickstarter/signals-concept-report-card-bad.png").full.drop-shadow
-            p.caption.padding-top18 Concept: Report card
-            p.caption Use high-level fulfillment metrics such as percentage of rewards sent, number of backers waiting, peer creators’ got-it rate, etc. to create a platform-wide high standard for fulfillment reporting.
-        //- Concept: Table
-        .row.row-no-gutters.padding-top18
+            p.caption.padding-top18 Concept 2: Report card
+            p.caption Or I like to call it, the "peer pressure" concept.
+        
+        //- Concept: Native
+        .row.row-no-gutters.padding-top64
           .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
-            p I also explored a more versatile and utilitarian concept: allow creators to select pre-canned  detailed reward fulfillment status.
+            p Another concept that I explored was #[span(class="bold") creator status update on our native app]. Traditionally, Kickstarter has fallen short on creator functionalities on Native. If we could #[span(class="bold") leverage creators’ need to send out a quick, convenient fulfillment update] via the native app to collect fulfillment signals from them, we’d hit 2 birds with one stone. 
           .col-md-5.col-sm-12
-            p I made an assumption that if we present this as a tool that benefits creators’ workflow, we’ll be able to convince creators to give us signals.
-        .row.row-no-gutters.padding-top30
+            p Unfortunately, this concept was quickly scrapped because we didn’t have Native development support.  
+        .row.row-no-gutters.padding-top18
+          .col-md-offset-2.col-md-8.col-sm-12
+            img(src="assets/img/kickstarter/signals-concept-native-status.png").full.drop-shadow
+            p.caption.padding-top18 Concept 3: Creator status update on Native
+
+        //- Concept: Table
+        .row.row-no-gutters.padding-top64
+          .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
+            p I also explored a more versatile and utilitarian concept: allow creators to select pre-canned reward fulfillment status.
+          .col-md-5.col-sm-12
+            p I made an assumption that if we present this as a tool that #[span(class="bold") benefits creators’ workflow], we’ll be able to convince creators to give us signals.
+        .row.row-no-gutters.padding-top18
           .col-md-offset-2.col-md-8.col-sm-12
             img(src="assets/img/kickstarter/signals-table-concept.png").full.drop-shadow
-            p.caption.padding-top18 Concept: Fulfillment status table
+            p.caption.padding-top18 Concept 4: Fulfillment Status Table
+        
+        //- Concept: Filters
+        .row.row-no-gutters.padding-top64
+          .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
+            p Another concept that I explored was incentives. What if we make fulfillment rate a permanent fixture in our #[span(class="bold") search and filters]?
+          .col-md-5.col-sm-12
+            p Would that incentivize creators to take fulfillment more seriously?
+        .row.row-no-gutters.padding-top18
+          .col-md-offset-3.col-md-6.col-sm-12
+            img(src="assets/img/kickstarter/signals-concept-filters.png").full.drop-shadow
+            p.caption.padding-top18 Concept 5: Fulfillment rate filters
+    
     //- SECT: Creator concept testing
     section.container-wrapper.margin-top48.border-top
       .container-fluid
@@ -227,8 +314,13 @@ html
           .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
             p Perhaps the biggest findings we came across was that creators wanted an easy way to communicate with backers about their rewards’ fulfillment status. 
           .col-md-5.col-sm-12
-            p If we could position this tool as a fulfillment status communication tool, we would be able to increase adoption and acquire more signals.
-    //- MVP!
+            p If we could position this tool as a #[span(class="bold") fulfillment status communication tool], we would be able to increase adoption and acquire more signals.
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-2.col-md-8.col-sm-12
+            img(src="assets/img/kickstarter/signals-research-findings-1.png").full.drop-shadow
+            img.padding-top18(src="assets/img/kickstarter/signals-research-findings-2.png").full.drop-shadow
+
+    //- SECT: MVP!
     section.container-wrapper.margin-top48.border-top
       .container-fluid
         .row.row-no-gutters.padding-top30
@@ -280,7 +372,8 @@ html
             +bullets(
               "Stakeholder alignment on what qualified as fulfillment signals",
               "A dedicated PM partner in the early stage of this project",
-              "A more adventurous spirit during early explorations"
+              "A more adventurous spirit during early explorations",
+              "Engineering support during exploration"
             )
         .row.row-no-gutters.padding-tb30
           .col-md-offset-1.col-md-2.col-sm-12.padding-bottom18-mobile
