@@ -76,7 +76,7 @@ html
             h3 Productizing a recurring user behavior
         .row.row-no-gutters.padding-top30
           .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
-            p In recent years, we observe that backers tend to “overpledge” (pledge for an amount higher than the minimum asked) for rewards on Kickstarter. Overpledge accounted for 4.1% of Kickstarter’s revenue in 2019, approximately $1.2M.
+            p In recent years, we observe that backers tend to “overpledge” (pledge for an amount higher than the minimum asked) for rewards on Kickstarter. Overpledge accounted for 4.1% of Kickstarter’s revenue in 2019, approximately #[span(class="bold") $1.2M].
           .col-md-5.col-sm-12
             p Much of this overpledge behavior could be attributed to add-ons – optional mini-rewards that backers can choose to add to their main rewards.
     //- Existing workflow was a nightmare
@@ -93,7 +93,8 @@ html
         .row.row-no-gutters.padding-top30
           .col-md-offset-2.col-md-8.col-sm-12
             img(src="assets/img/kickstarter/add-on-graphic.png").full
-            p Existing add-on behavior
+            p.caption Existing add-on behavior
+    
     //- A multi-phased feature development plan
     section.container-wrapper.margin-top48.border-top
       .container-fluid
@@ -101,13 +102,35 @@ html
           .col-md-offset-1.col-md-10.col-sm-12
             h3 A multi-phased feature development plan
         .row.row-no-gutters.padding-top30
-          .col-md-offset-1.col-md-5.col-sm-12.col-sm-12.padding-bottom18-mobile
+          .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
             p Productizing add-ons would touch many parts of the 10-year-old platform, from project build to checkout, creator dashboard to transactional emails. Our feature team, Creator Tools, had a multi-phased approach to developing the feature, starting with the highest-priorities, #[span(class="bold") Checkout] and #[span(class="bold") Project Build]. 
-          .col-md-5
+          .col-md-5.col-sm-12
             p I was brought on board while the development of checkout with add-ons was in flux. For the next few months, I would be the sole designer for all checkout edge cases, secondary UIs, transaction emails, and most importantly, the #[span(class="bold") add-on creation flow for creators].
         .row.row-no-gutters.padding-top30
           .col-md-offset-1.col-md-10.col-sm-12
             img(src="assets/img/kickstarter/add-on-timeline.png").full
+    
+    //- Narrow in on one UX
+    section.container-wrapper.margin-top48.border-top
+      .container-fluid
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-1.col-md-10.col-sm-12
+            h3 Narrow in on one UX direction
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
+            p Add-on was a fairly well-scoped project. As a team, we explored several UX concepts that I crafted. I worked with my PM and Eng Lead to figure out business and technical trade-offs.
+          .col-md-5.col-sm-12
+            p  We also did some quick concept testing with creators. After discussions, we finally landed at Concept 3, the Rewards tab inside Project Build, which is where creators go to manage their campaigns. 
+        .row.row-no-gutters.padding-top64
+          .col-md-offset-1.col-md-10.col-sm-12
+            img(src="assets/img/kickstarter/add-on-concept-form.png").full
+        .row.row-no-gutters.padding-top64
+          .col-md-offset-1.col-md-10.col-sm-12
+            img(src="assets/img/kickstarter/add-on-concept-quick-add.png").full
+        .row.row-no-gutters.padding-top64
+          .col-md-offset-1.col-md-10.col-sm-12
+            img(src="assets/img/kickstarter/add-on-concept-csv-upload.png").full
+    
     //- Leverage quantitative data to design adaptive, resilient UIs
     section.container-wrapper.margin-top48.border-top
       .container-fluid
@@ -123,21 +146,18 @@ html
         .row.row-no-gutters.padding-top30
           .col-md-offset-1.col-md-10.col-sm-12
             img(src="assets/img/kickstarter/add-on-looker.png").full
+            p.caption.padding-top18 I ran a couple of Looker queries to scope this UI     
         .row.row-no-gutters.padding-top64
           .col-md-offset-1.col-md-10.col-sm-12
-            img(src="assets/img/kickstarter/add-on-concept-quick-add.png").full
-        .row.row-no-gutters.padding-top64
-          .col-md-offset-1.col-md-10.col-sm-12
-            img(src="assets/img/kickstarter/add-on-concept-csv-upload.png").full
-        .row.row-no-gutters.padding-top64
-          .col-md-offset-2.col-md-8.col-sm-12
-            img(src="assets/img/kickstarter/add-on-concept-rewards-tab.png").full
+            img(src="assets/img/kickstarter/add-on-cell-ui-variations.png").full
+            p.caption.padding-top18 The cell design went through many iterations. I made extensive use of iconography for edit actions and created a system for color-coded pills. The cells also had gone through a bunch of accessibility and UI pressure tests.     
+    
     //- Creators equate add-ons with items, not rewards
     section.container-wrapper.margin-top48.border-top
       .container-fluid
         .row.row-no-gutters.padding-top30
           .col-md-offset-1.col-md-10.col-sm-12
-            h3 Leverage quantitative data to design adaptive, resilient UIs
+            h3 Creators equate add-ons with items, not rewards
         .row.row-no-gutters.padding-top30
           .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
             p With this feature, I placed great emphasis on rapid testing and iterations. From late April to mid-June 2020, I did a total of 3 rounds of testing and design iterations, walking through the feature with 10 creators from various funding tiers and categories, from under $5K to over $100K, games to publishing, independent to big-named creators.
@@ -149,25 +169,28 @@ html
         )
         .row.row-no-gutters.padding-top64
           .col-md-offset-2.col-md-8.col-sm-12
-            img(src="assets/img/kickstarter/add-on-item-to-add-on.gif").full
-            p Creators can quickly turn an item into an add-on
+            img(src="assets/img/kickstarter/add-on-item-to-add-on.gif").full.drop-shadow
+            p.caption.padding-top18 Creators can quickly turn an item into an add-on
         .row.row-no-gutters.padding-top64
           .col-md-offset-2.col-md-8.col-sm-12
             img(src="assets/img/kickstarter/add-on-assign.gif").full.drop-shadow
-            p I worked on various interaction models for custom add-on assignment (in modals, within main reward management UI, etc.) After 3 rounds of user walkthroughs, I settled on incorporating the interaction in the add/edit flow, as it caused the least friction.
+            p.caption.padding-top18 I worked on various interaction models for custom add-on assignment (in modals, within main reward management UI, etc.). After 3 rounds of user walkthroughs, I settled on incorporating the interaction in the add/edit flow, as it caused the least friction.
+        .row.row-no-gutters.padding-top64
+          .col-md-offset-2.col-md-8.col-sm-12
+            img(src="assets/img/kickstarter/add-on-concept-table-interaction.png").full
+        .row.row-no-gutters.padding-top64
+          .col-md-offset-2.col-md-8.col-sm-12
+            img(src="assets/img/kickstarter/add-on-add.png").full.drop-shadow
         .row.row-no-gutters.padding-top64
           .col-md-offset-2.col-md-8.col-sm-12
             img(src="assets/img/kickstarter/add-on-full-page.png").full.drop-shadow
         .row.row-no-gutters.padding-top64
           .col-md-offset-1.col-md-10.col-sm-12
-            img(src="assets/img/kickstarter/add-on-ui-collage.png").full
+            img(src="assets/img/kickstarter/add-on-ui-collage.png").full.drop-shadow
         .row.row-no-gutters.padding-top64
           .col-md-offset-4.col-md-3.col-sm-12
             img(src="assets/img/kickstarter/add-on-mobile.gif").full.drop-shadow
-        .row.row-no-gutters.padding-top64
-          .col-md-offset-1.col-md-10.col-sm-12
-            img(src="assets/img/kickstarter/add-on-cell-ui-variations.png").full
-            p The cell design went through many iterations. I made extensive use of iconography for edit actions and created a system for color-coded pills. The cells also had gone through a bunch of accessibility and UI pressure tests.     
+    
     //- Launch is not the end
     section.container-wrapper.margin-top48.border-top
       .container-fluid
@@ -194,6 +217,7 @@ html
           .col-md-5.col-sm-12
             h1 30%
             h5 Immediate creator adoption
+    
     //- High-impact, low-lift UX improvements
     section.container-wrapper.margin-top48.border-top
       .container-fluid
@@ -207,7 +231,10 @@ html
             p Although we might eventually want to incorporate add-ons into the project page, we want to see if this easy fix reduces the number of immediate concerns first.
         .row.row-no-gutters.padding-top30
           .col-md-offset-2.col-md-8.col-sm-12
-            img(src="assets/img/kickstarter/add-on-pill.png").full
+            img(src="assets/img/kickstarter/add-on-ux-improvement-1.png").full.drop-shadow
+        .row.row-no-gutters.padding-top30
+          .col-md-offset-2.col-md-8.col-sm-12
+            img(src="assets/img/kickstarter/add-on-ux-improvement-2.png").full.drop-shadow
         .row.row-no-gutters.padding-top30
           .col-md-offset-1.col-md-5.col-sm-12.padding-bottom18-mobile
             p Another high-impact, low-lift UX improvement was the tab redesign. We noticed that creators were having trouble discovering the new add-on tab due to low interactivity.I originally repurposed an old Kickstarter tab pattern, but since it proved to hinder discoverability, I decided to redesign the entire tab navigation area on this page.
